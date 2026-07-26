@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Logo obszaru roboczego",
       "open_workspace_switcher": "Otwórz przełącznik obszaru roboczego",
+      "open_workspace_menu": "Otwórz menu obszaru roboczego",
+      "close_workspace_menu": "Zamknij menu obszaru roboczego",
       "open_user_menu": "Otwórz menu użytkownika",
       "open_command_palette": "Otwórz paletę poleceń",
       "open_extended_sidebar": "Otwórz rozszerzoną pasek boczny",

@@ -1,0 +1,33 @@
+version: 1
+
+requests:
+  - name: SignIn
+    route: /auth/sign-in/
+    method: POST
+    source: apps/api/plane/authentication/views/app/email.py
+    description: Email+password sign-in; requires csrfmiddlewaretoken form field from /auth/get-csrf-token/
+    memory:
+      - Responds 302 to the web origin on success; errors redirect back with error_code query params.
+  - name: CurrentUser
+    route: /api/users/me/
+    method: GET
+    source: apps/api/plane/app/views/user/base.py
+  - name: WorkspaceProjects
+    route: /api/workspaces/:slug/projects/
+    method: GET
+    source: apps/api/plane/app/views/project/base.py
+    response:
+      fields:
+        - name: id
+          type: string
+        - name: name
+          type: string
+        - name: identifier
+          type: string
+          description: Short code used in work item keys (e.g. ROCKET)
+  - name: ProjectIssues
+    route: /api/workspaces/:slug/projects/:projectId/issues/
+    method: GET
+    source: apps/api/plane/app/views/issue/base.py
+    memory:
+      - The list endpoint returns grouped results when group_by is set; the web app always passes it.

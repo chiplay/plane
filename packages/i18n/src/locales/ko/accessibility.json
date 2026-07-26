@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "워크스페이스 로고",
       "open_workspace_switcher": "워크스페이스 전환기 열기",
+      "open_workspace_menu": "워크스페이스 메뉴 열기",
+      "close_workspace_menu": "워크스페이스 메뉴 닫기",
       "open_user_menu": "사용자 메뉴 열기",
       "open_command_palette": "명령 팔레트 열기",
       "open_extended_sidebar": "확장된 사이드바 열기",

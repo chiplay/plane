@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Logo không gian làm việc",
       "open_workspace_switcher": "Mở trình chuyển đổi không gian làm việc",
+      "open_workspace_menu": "Mở menu không gian làm việc",
+      "close_workspace_menu": "Đóng menu không gian làm việc",
       "open_user_menu": "Mở menu người dùng",
       "open_command_palette": "Mở bảng lệnh",
       "open_extended_sidebar": "Mở thanh bên mở rộng",

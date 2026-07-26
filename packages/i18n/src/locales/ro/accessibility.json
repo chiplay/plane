@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Logo spațiu de lucru",
       "open_workspace_switcher": "Deschide comutator spațiu de lucru",
+      "open_workspace_menu": "Deschide meniul spațiului de lucru",
+      "close_workspace_menu": "Închide meniul spațiului de lucru",
       "open_user_menu": "Deschide meniul utilizatorului",
       "open_command_palette": "Deschide paleta de comenzi",
       "open_extended_sidebar": "Deschide bara laterală extinsă",

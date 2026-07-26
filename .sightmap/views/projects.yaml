@@ -1,0 +1,26 @@
+version: 1
+
+views:
+  - name: ProjectsList
+    route: /*/projects/
+    source: apps/web/app/(all)/[workspaceSlug]/(projects)/projects/(list)/page.tsx
+    description: Card grid of all projects in the workspace
+    memory:
+      - Clicking a project card navigates straight to that project's work items list (/projects/:projectId/issues/).
+      - The page renders lazily; a fresh navigation shows only a logo for 1-3 seconds.
+    components:
+      - name: ProjectCard
+        selector: 'a.group\/project-card'
+        properties:
+          - name: title
+            extract: 'h1,h2,h3,h4,h5,h6'
+          - name: href
+            extract: attr=href
+        children:
+          - name: ProjectCardMenu
+            selector: 'button'
+      - name: AddProjectButton
+        selector: '[data-ph-element="create_project_header_button"]'
+        description: Header button that opens the create-project modal
+        memory:
+          - The "Filters" and "Created date" controls next to this button have no stable attributes; address them by accessible name within MainContent.

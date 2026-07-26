@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Çalışma alanı logosu",
       "open_workspace_switcher": "Çalışma alanı değiştiricisini aç",
+      "open_workspace_menu": "Çalışma alanı menüsünü aç",
+      "close_workspace_menu": "Çalışma alanı menüsünü kapat",
       "open_user_menu": "Kullanıcı menüsünü aç",
       "open_command_palette": "Komut paletini aç",
       "open_extended_sidebar": "Genişletilmiş kenar çubuğunu aç",

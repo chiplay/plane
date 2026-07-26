@@ -1,0 +1,195 @@
+[View: WorkspaceHome]
+route: /*/
+memory:
+  - This is the default landing page after sign-in; the URL is just /:workspaceSlug/.
+  - The center widgets (Quick links, Stickies, Recents, "Manage widgets") render no stable attributes — no ids, no data-* hooks. They are only reachable as T2 under MainContent; drive them by accessible name.
+
+[Guide]
+PeekNavLink            5
+SidebarNavLink         5
+SidebarCollapseButton  4
+ProjectsDisclosure     2
+UserMenuButton         2
+AppHeader              1
+AppSidebar             1
+CommandSearch          1
+ContextMenuPortal      1
+CreateProjectButton    1
+CreateWorkItemButton   1
+ExtendedSidebarToggle  1
+GitHubStarLink         1
+MainContent            1
+NotificationsLink      1
+SearchInput            1
+SidebarPeekView        1
+WorkspaceSwitcher      1
+
+--- component tree ---
+
+27 generic
+  40 main
+    41 generic
+      42 [AppHeader]
+        45 [WorkspaceSwitcher "Open workspace switcher"]
+          49 heading "Acme Corp"
+          51 image
+        58 generic
+          60 [CommandSearch "Search commands..."]
+            61 image
+            63 [SearchInput "Search commands..."]
+        66 [NotificationsLink]
+          69 image
+        72 [UserMenuButton]
+          73 button
+            75 image
+        79 [GitHubStarLink "Star us on GitHub"]
+        85 [UserMenuButton]
+          86 button "E"
+      93 generic
+        95 generic
+          96 [AppSidebar "Main sidebar"]
+            97 generic
+              104 button
+                105 image
+              107 [SidebarCollapseButton]
+                108 image
+              112 [CreateWorkItemButton "New work item"]
+                113 image
+              119 generic
+                121 [SidebarNavLink "Home"]
+                  124 image
+                  126 paragraph
+                128 [SidebarNavLink "Drafts"]
+                  131 image
+                  133 paragraph
+                135 [SidebarNavLink "Your work"]
+                  138 image
+                  141 paragraph
+                143 [SidebarNavLink "Stickies"]
+                  146 image
+                  148 paragraph
+                152 button "aria_labels.app_sidebar.close_workspace_menu"
+                164 generic
+                  165 [SidebarNavLink "Projects"]
+                    168 image
+                    170 paragraph
+                  173 [ExtendedSidebarToggle "aria_labels.app_sidebar.open_extended_sidebar"]
+                    174 image
+                183 [ProjectsDisclosure "Close projects menu"]
+                187 [CreateProjectButton]
+                190 [ProjectsDisclosure "Close projects menu"]
+                  191 image
+                198 generic
+                  200 group
+                    202 generic
+                      213 link
+                        214 button "Open project menu"
+                          218 paragraph
+                      228 [SidebarCollapseButton]
+                  236 group
+                    238 generic
+                      249 link
+                        250 button "Open project menu"
+                          253 paragraph
+                      263 [SidebarCollapseButton]
+              274 button "Open paid plans' modal"
+              276 separator "Resize sidebar"
+          277 [SidebarPeekView "Sidebar peek view"]
+            278 generic
+              285 button
+                286 image
+              288 button
+                289 image
+              293 button "New work item"
+                294 image
+              300 generic
+                302 [PeekNavLink "Home"]
+                  305 image
+                  307 paragraph
+                309 [PeekNavLink "Drafts"]
+                  312 image
+                  314 paragraph
+                316 [PeekNavLink "Your work"]
+                  319 image
+                  322 paragraph
+                324 [PeekNavLink "Stickies"]
+                  327 image
+                  329 paragraph
+                333 button "aria_labels.app_sidebar.close_workspace_menu"
+                345 generic
+                  346 [PeekNavLink "Projects"]
+                    349 image
+                    351 paragraph
+                  354 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    355 image
+                364 button "Close projects menu"
+                371 button "Close projects menu"
+                  372 image
+                379 generic
+                  381 group
+                    383 generic
+                      394 link
+                        395 button "Open project menu"
+                          399 paragraph
+                  417 group
+                    419 generic
+                      430 link
+                        431 button "Open project menu"
+                          434 paragraph
+              455 button "Open paid plans' modal"
+              457 separator "Resize sidebar"
+          621 [MainContent]
+            625 generic
+              630 generic
+                632 image
+              637 button "Manage widgets"
+                638 image
+            649 heading "Good morning, Eval User"
+            655 heading "🌤️ Sunday, Jul 26 03:31"
+            663 generic
+              668 button "Not right now"
+                670 image
+              680 image
+              682 heading "Create a project"
+              684 paragraph
+              687 image
+              692 image
+              694 heading "Invite your team"
+              696 paragraph
+              698 link "Get them in"
+              703 image
+              714 heading "Set up your workspace."
+              716 paragraph
+              718 link "Configure this workspace"
+              723 link "E"
+              726 heading "Make Plane yours."
+              728 paragraph
+              730 link "Personalize now"
+              738 button "Add quick Link"
+                739 image
+              748 image
+              761 paragraph
+              770 button
+                771 button "All"
+                  774 image
+              784 generic
+                785 link "ROCKET-1 Fix login redirect loop 2 minutes ago"
+                  791 image
+                804 image
+                824 image
+              831 generic
+                832 link "ROCKET Rocket Ship less than a minute ago"
+                848 button
+                  849 button "E"
+              862 button
+                863 image
+              869 button "Add sticky"
+                870 image
+              883 image
+              894 paragraph
+[Warnings]
+WorkspaceHome: ContextMenuItem — 0 matches
+
+
+[Coverage] (visible only)
+148 interactive · 24 direct T1 (16%) · 124 scoped T2 (84%) · 0 orphaned T3 ✓

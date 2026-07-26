@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Workspace logo",
       "open_workspace_switcher": "Open workspace switcher",
+      "open_workspace_menu": "Open workspace menu",
+      "close_workspace_menu": "Close workspace menu",
       "open_user_menu": "Open user menu",
       "open_command_palette": "Open command palette",
       "open_extended_sidebar": "Open extended sidebar",

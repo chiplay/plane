@@ -1,0 +1,18 @@
+version: 1
+
+views:
+  - name: WorkItemDetail
+    route: /*/browse/*/
+    source: apps/web/app/(all)/[workspaceSlug]/(projects)/browse/[workItem]/page.tsx
+    description: Full-page work item view (also rendered as a peek overlay from lists)
+    memory:
+      - The work item key (e.g. ROCKET-1) is the last URL segment; the page shows it as a small button next to the title.
+      - The title is a textarea with placeholder "Work item title"; edits autosave on blur, there is no Save button.
+      - Right-hand Properties panel, top to bottom - State, Assignees, Priority, Start date, Due date, Parent, Labels. Each is an unlabeled button showing the current value; click opens its dropdown.
+      - The description editor toolbar buttons are icon-only with no accessible names.
+    components:
+      - name: WorkItemTitleInput
+        selector: '#title-input'
+        properties:
+          - name: value
+            extract: attr=value
