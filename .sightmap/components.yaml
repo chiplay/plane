@@ -1,0 +1,61 @@
+version: 1
+
+components:
+  - name: WorkspaceSwitcher
+    selector: '[aria-label="Open workspace switcher"]'
+    description: Top-bar workspace menu button
+    properties:
+      - name: workspaceName
+        extract: 'h4'
+  - name: CommandSearch
+    selector: 'input.placeholder-text-placeholder'
+    memory:
+      - Opens the command palette; keyboard shortcut Cmd/Ctrl+K
+  - name: AppSidebar
+    selector: '#main-sidebar'
+    source: apps/web/core/components/workspace/sidebar/root.tsx
+    memory:
+      - Project rows expand to reveal per-project links (Work items, Cycles, Modules, Views, Pages)
+      - Duplicate hidden copy exists as "Sidebar peek view" — hidden matches are expected
+    children:
+      - name: CreateWorkItemButton
+        selector: '[data-ph-element="sidebar_create_work_item_button"]'
+        properties:
+          - name: label
+            extract: text
+      - name: SidebarProjectLink
+        selector: 'a[href*="/projects/"][href$="/issues"]'
+        properties:
+          - name: projectName
+            extract: 'p'
+      - name: SidebarNavLink
+        selector: 'a[data-discover]'
+        properties:
+          - name: label
+            extract: text
+  - name: SidebarPeekView
+    selector: '[aria-label="Sidebar peek view"]'
+    description: Hover-peek duplicate of the sidebar; a11y-visible duplicate of all nav links
+    memory:
+      - Duplicates every sidebar link; interact with AppSidebar instead
+  - name: NotificationsLink
+    selector: 'a[href$="/notifications/"]'
+    description: Top-bar inbox/notifications
+  - name: StarOnGitHubLink
+    selector: '[aria-label="Star us on GitHub"]'
+  - name: ContextMenuPortal
+    selector: '#context-menu-portal'
+    description: Right-click context menus for rows render here (Edit, Copy link, Delete, ...)
+    memory:
+      - Menus exist in the DOM for every row even when not open — do not treat presence as an open menu
+  - name: PageHeaderBar
+    selector: 'div.z-\[27\]'
+    description: Per-page top bar with breadcrumbs, layout switcher, Filters/Display, page actions
+    memory:
+      - No stable hooks on Filters/Display/layout buttons; keyed on a Tailwind z-index utility class — fragile, re-verify after UI changes
+    children:
+      - name: BreadcrumbLink
+        selector: 'a'
+        properties:
+          - name: label
+            extract: text

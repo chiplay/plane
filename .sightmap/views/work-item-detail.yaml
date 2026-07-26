@@ -1,0 +1,27 @@
+version: 1
+views:
+  - name: WorkItemDetail
+    route: /:workspaceSlug/browse/:workItem
+    url: http://localhost:3000/acme-rockets/browse/FALCON-1/
+    description: Full-page work item (issue) detail with title, rich-text description, properties rail, activity/comments
+    source: apps/web/app/routes/core.ts
+    memory:
+      - Title is a bare <textarea>; edits autosave (no Save button)
+      - Two .tiptap.ProseMirror editors exist - first is the description, second is the comment composer
+      - State/priority/assignee are unlabeled buttons in the right rail showing the CURRENT value as text (e.g. "In Progress"); clicking opens a dropdown
+    components:
+      - name: WorkItemTitleInput
+        selector: 'textarea'
+        properties:
+          - name: value
+            extract: text
+      - name: RichTextEditor
+        selector: '.tiptap.ProseMirror'
+        description: TipTap editor; occurrence 0 = description, occurrence 1 = comment composer
+        memory:
+          - Type "/" inside the editor for slash commands (headings, lists, embeds)
+      - name: PropertiesRail
+        selector: 'div.fixed.right-0'
+        description: Right rail with state, assignees, priority, dates, module, cycle, parent, relations, links
+        memory:
+          - Buttons show current values as their text; no aria-labels or data attributes

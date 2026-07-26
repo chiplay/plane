@@ -1,0 +1,18 @@
+version: 1
+views:
+  - name: ProjectCycles
+    route: /:workspaceSlug/projects/:projectId/cycles
+    description: Cycles (sprints) list for a project
+    source: apps/web/app/routes/core.ts
+    memory:
+      - Cycle rows link to /:workspaceSlug/projects/:projectId/cycles/:cycleId
+    components:
+      - name: CycleListItem
+        selector: 'a[href*="/cycles/"]'
+        properties:
+          - name: title
+            extract: text
+  - name: CycleDetail
+    route: /:workspaceSlug/projects/:projectId/cycles/:cycleId
+    description: One cycle's work items with progress
+    source: apps/web/app/routes/core.ts

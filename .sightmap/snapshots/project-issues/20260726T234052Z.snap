@@ -1,0 +1,372 @@
+[View: ProjectIssues]
+route: /:workspaceSlug/projects/:projectId/issues
+memory:
+  - Row containers use dynamic ids (issue_<uuid>) — offline matcher cannot key on [id^=]; only the title link is stably selectable
+  - Each row carries ~13 unlabeled dropdown buttons (state, priority, dates, assignee) with no stable hooks — they stay T2 under WorkItemList
+  - Clicking a work item title navigates to /:workspaceSlug/browse/:workItem (full page), not a modal
+
+[Guide]
+WorkItemLink          8
+SidebarNavLink        7
+BreadcrumbLink        2
+SidebarProjectLink    2
+AddWorkItemButton     1
+AppSidebar            1
+CommandSearch         1
+ContextMenuPortal     1
+CreateWorkItemButton  1
+PageHeaderBar         1
+SidebarPeekView       1
+WorkItemList          1
+WorkspaceSwitcher     1
+
+--- component tree ---
+
+27 generic
+  740 main
+    741 generic
+      742 [PageHeaderBar]
+        745 [WorkspaceSwitcher "Open workspace switcher"]
+          749 heading "Acme Rockets"
+          751 image
+        758 generic
+          760 button "Search commands..."
+            761 image
+            763 [CommandSearch "Search commands..."]
+        766 [BreadcrumbLink]
+          769 image
+        772 button
+          773 button
+            775 image
+        779 [BreadcrumbLink "Star us on GitHub"]
+        785 button
+          786 button "E"
+      793 generic
+        795 generic
+          796 [AppSidebar "Main sidebar"]
+            797 generic
+              804 button
+                805 image
+              807 button
+                808 image
+              812 [CreateWorkItemButton "New work item"]
+                813 image
+              819 generic
+                821 [SidebarNavLink "Home"]
+                  824 image
+                  826 paragraph
+                828 [SidebarNavLink "Drafts"]
+                  831 image
+                  833 paragraph
+                835 [SidebarNavLink "Your work"]
+                  838 image
+                  841 paragraph
+                843 [SidebarNavLink "Stickies"]
+                  846 image
+                  848 paragraph
+                852 button "aria_labels.app_sidebar.close_workspace_menu"
+                864 generic
+                  865 [SidebarNavLink "Projects"]
+                    868 image
+                    870 paragraph
+                  873 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    874 image
+                883 button "Close projects menu"
+                890 button "Close projects menu"
+                  891 image
+                898 generic
+                  900 group
+                    902 generic
+                      913 [SidebarProjectLink]
+                        914 button "Close project menu"
+                          917 paragraph
+                    935 generic
+                      937 [SidebarNavLink "Work items"]
+                        941 image
+                      945 [SidebarNavLink "Pages"]
+                        949 image
+                  954 group
+                    956 generic
+                      967 [SidebarProjectLink]
+                        968 button "Open project menu"
+                          972 paragraph
+              993 button "Open paid plans' modal"
+              995 separator "Resize sidebar"
+          996 [SidebarPeekView "Sidebar peek view"]
+            997 generic
+              1004 button
+                1005 image
+              1007 button
+                1008 image
+              1012 button "New work item"
+                1013 image
+              1019 generic
+                1021 link "Home"
+                  1024 image
+                  1026 paragraph
+                1028 link "Drafts"
+                  1031 image
+                  1033 paragraph
+                1035 link "Your work"
+                  1038 image
+                  1041 paragraph
+                1043 link "Stickies"
+                  1046 image
+                  1048 paragraph
+                1052 button "aria_labels.app_sidebar.close_workspace_menu"
+                1064 generic
+                  1065 link "Projects"
+                    1068 image
+                    1070 paragraph
+                  1073 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    1074 image
+                1083 button "Close projects menu"
+                1090 button "Close projects menu"
+                  1091 image
+                1098 generic
+                  1100 group
+                    1102 generic
+                      1113 link
+                        1114 button "Close project menu"
+                          1117 paragraph
+                    1135 generic
+                      1137 link "Work items"
+                        1141 image
+                      1145 link "Pages"
+                        1149 image
+                  1154 group
+                    1156 generic
+                      1167 link
+                        1168 button "Open project menu"
+                          1172 paragraph
+              1193 button "Open paid plans' modal"
+              1195 separator "Resize sidebar"
+          1378 main
+            1382 generic
+              1385 generic
+                1388 button "..."
+                  1389 button "..."
+                  1398 generic
+                    1401 image
+                1408 link "Work Items"
+                  1409 generic
+                    1411 image
+              1438 button
+                1439 button
+                  1440 image
+                  1442 image
+              1448 button
+                1449 image
+              1456 generic
+                1463 button
+                  1464 image
+              1475 button
+                1479 image
+              1483 [AddWorkItemButton "Add work item"]
+            1520 [WorkItemList]
+              1524 image
+              1533 generic
+              1540 image
+              1542 generic
+                1552 generic
+                  1553 generic
+                    1556 [WorkItemLink]
+                      1557 group
+                        1563 button "FALCON-8"
+                        1566 paragraph
+                        1570 button
+                          1571 image
+                        1576 generic
+                          1579 button
+                            1580 button "Backlog"
+                              1581 image
+                          1617 button
+                            1620 image
+                          1625 button
+                            1626 button
+                              1627 image
+                          1631 button
+                            1632 button
+                              1633 image
+                          1637 button
+                            1638 button
+                              1639 image
+                          1643 button
+                            1645 image
+                  1659 generic
+                    1662 [WorkItemLink]
+                      1663 group
+                        1669 button "FALCON-7"
+                        1672 paragraph
+                        1676 button
+                          1677 image
+                        1682 generic
+                          1685 button
+                            1686 button "Done"
+                              1687 image
+                          1693 button
+                            1696 image
+                          1702 button
+                            1703 button
+                              1704 image
+                          1708 button
+                            1709 button
+                              1710 image
+                          1714 button
+                            1715 button
+                              1716 image
+                          1720 button
+                            1722 image
+                  1736 generic
+                    1739 [WorkItemLink]
+                      1740 group
+                        1746 button "FALCON-6"
+                        1749 paragraph
+                        1753 button
+                          1754 image
+                        1759 generic
+                          1762 button
+                            1763 button "Backlog"
+                              1764 image
+                          1800 button
+                            1803 image
+                          1808 button
+                            1809 button
+                              1810 image
+                          1814 button
+                            1815 button
+                              1816 image
+                          1820 button
+                            1821 button
+                              1822 image
+                          1826 button
+                            1828 image
+                  1842 generic
+                    1845 [WorkItemLink]
+                      1846 group
+                        1852 button "FALCON-5"
+                        1855 paragraph
+                        1859 button
+                          1860 image
+                        1865 generic
+                          1868 button
+                            1869 button "Backlog"
+                              1870 image
+                          1906 button
+                            1909 image
+                          1915 button
+                            1916 button
+                              1917 image
+                          1921 button
+                            1922 button
+                              1923 image
+                          1927 button
+                            1928 button
+                              1929 image
+                          1933 button
+                            1935 image
+                  1949 generic
+                    1952 [WorkItemLink]
+                      1953 group
+                        1959 button "FALCON-4"
+                        1962 paragraph
+                        1966 button
+                          1967 image
+                        1972 generic
+                          1975 button
+                            1976 button "Todo"
+                              1977 image
+                          1984 button
+                            1987 image
+                          1993 button
+                            1994 button
+                              1995 image
+                          1999 button
+                            2000 button
+                              2001 image
+                          2005 button
+                            2006 button
+                              2007 image
+                          2011 button
+                            2013 image
+                  2027 generic
+                    2030 [WorkItemLink]
+                      2031 group
+                        2037 button "FALCON-3"
+                        2040 paragraph
+                        2044 button
+                          2045 image
+                        2050 generic
+                          2053 button
+                            2054 button "In Progress"
+                              2055 image
+                          2063 button
+                            2066 image
+                          2073 button
+                            2074 button
+                              2075 image
+                          2079 button
+                            2080 button
+                              2081 image
+                          2085 button
+                            2086 button
+                              2087 image
+                          2091 button
+                            2093 image
+                  2107 generic
+                    2110 [WorkItemLink]
+                      2111 group
+                        2117 button "FALCON-2"
+                        2120 paragraph
+                        2124 button
+                          2125 image
+                        2130 generic
+                          2133 button
+                            2134 button "Todo"
+                              2135 image
+                          2142 button
+                            2145 image
+                          2152 button
+                            2153 button
+                              2154 image
+                          2158 button
+                            2159 button
+                              2160 image
+                          2164 button
+                            2165 button
+                              2166 image
+                          2170 button
+                            2172 image
+                  2186 generic
+                    2189 [WorkItemLink]
+                      2190 group
+                        2196 button "FALCON-1"
+                        2199 paragraph
+                        2203 button
+                          2204 image
+                        2209 generic
+                          2212 button
+                            2213 button "In Progress"
+                              2214 image
+                          2222 button
+                            2225 image
+                          2231 button
+                            2232 button
+                              2233 image
+                          2237 button
+                            2238 button
+                              2239 image
+                          2243 button
+                            2244 button
+                              2245 image
+                          2249 button
+                            2251 image
+                2268 generic
+                  2269 image
+[Warnings]
+ProjectIssues: NotificationsLink — 0 matches
+ProjectIssues: StarOnGitHubLink — 0 matches
+
+
+[Coverage] (visible only)
+663 interactive · 24 direct T1 (4%) · 623 scoped T2 (94%) · 16 orphaned T3 ✗

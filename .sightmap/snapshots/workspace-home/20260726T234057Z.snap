@@ -1,0 +1,193 @@
+[View: WorkspaceHome]
+route: /:workspaceSlug
+memory:
+  - First visit shows onboarding cards (Take a Product Tour / No thanks) with no stable selectors
+  - Recents section lists recently visited projects/issues as links
+
+[Guide]
+SidebarNavLink        5
+BreadcrumbLink        2
+SidebarProjectLink    2
+AppSidebar            1
+CommandSearch         1
+ContextMenuPortal     1
+CreateWorkItemButton  1
+HomeContent           1
+PageHeaderBar         1
+SidebarPeekView       1
+WorkspaceSwitcher     1
+
+--- component tree ---
+
+27 generic
+  40 main
+    41 generic
+      42 [PageHeaderBar]
+        45 [WorkspaceSwitcher "Open workspace switcher"]
+          49 heading "Acme Rockets"
+          51 image
+        58 generic
+          60 button "Search commands..."
+            61 image
+            63 [CommandSearch "Search commands..."]
+        66 [BreadcrumbLink]
+          69 image
+        72 button
+          73 button
+            75 image
+        79 [BreadcrumbLink "Star us on GitHub"]
+        85 button
+          86 button "E"
+      93 generic
+        95 generic
+          96 [AppSidebar "Main sidebar"]
+            97 generic
+              104 button
+                105 image
+              107 button
+                108 image
+              112 [CreateWorkItemButton "New work item"]
+                113 image
+              119 generic
+                121 [SidebarNavLink "Home"]
+                  124 image
+                  126 paragraph
+                128 [SidebarNavLink "Drafts"]
+                  131 image
+                  133 paragraph
+                135 [SidebarNavLink "Your work"]
+                  138 image
+                  141 paragraph
+                143 [SidebarNavLink "Stickies"]
+                  146 image
+                  148 paragraph
+                152 button "aria_labels.app_sidebar.close_workspace_menu"
+                164 generic
+                  165 [SidebarNavLink "Projects"]
+                    168 image
+                    170 paragraph
+                  173 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    174 image
+                183 button "Close projects menu"
+                190 button "Close projects menu"
+                  191 image
+                198 generic
+                  200 group
+                    202 generic
+                      213 [SidebarProjectLink]
+                        214 button "Open project menu"
+                          217 paragraph
+                  235 group
+                    237 generic
+                      248 [SidebarProjectLink]
+                        249 button "Open project menu"
+                          253 paragraph
+              274 button "Open paid plans' modal"
+              276 separator "Resize sidebar"
+          277 [SidebarPeekView "Sidebar peek view"]
+            278 generic
+              285 button
+                286 image
+              288 button
+                289 image
+              293 button "New work item"
+                294 image
+              300 generic
+                302 link "Home"
+                  305 image
+                  307 paragraph
+                309 link "Drafts"
+                  312 image
+                  314 paragraph
+                316 link "Your work"
+                  319 image
+                  322 paragraph
+                324 link "Stickies"
+                  327 image
+                  329 paragraph
+                333 button "aria_labels.app_sidebar.close_workspace_menu"
+                345 generic
+                  346 link "Projects"
+                    349 image
+                    351 paragraph
+                  354 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    355 image
+                364 button "Close projects menu"
+                371 button "Close projects menu"
+                  372 image
+                379 generic
+                  381 group
+                    383 generic
+                      394 link
+                        395 button "Open project menu"
+                          398 paragraph
+                  416 group
+                    418 generic
+                      429 link
+                        430 button "Open project menu"
+                          434 paragraph
+              455 button "Open paid plans' modal"
+              457 separator "Resize sidebar"
+          621 [HomeContent]
+            625 generic
+              630 generic
+                632 image
+              637 button "Manage widgets"
+                638 image
+            645 generic
+              650 image
+              662 heading "Welcome to Plane, Eval Admin"
+              666 paragraph
+              672 button "Take a Product Tour"
+              674 button "No thanks, I will explore it myself"
+              679 heading "Good evening, Eval Admin"
+              685 heading "🌙️ Sunday, Jul 26 23:40"
+              693 generic
+                698 button "Not right now"
+                  700 image
+                710 image
+                712 heading "Create a project"
+                714 paragraph
+                717 image
+                722 image
+                724 heading "Invite your team"
+                726 paragraph
+                728 link "Get them in"
+                733 image
+                744 heading "Set up your workspace."
+                746 paragraph
+                748 link "Configure this workspace"
+                753 link "E"
+                756 heading "Make Plane yours."
+                758 paragraph
+                760 link "Personalize now"
+                768 button "Add quick Link"
+                  769 image
+                778 image
+                791 paragraph
+                800 button
+                  801 button "All"
+                    804 image
+                814 generic
+                  815 link "FALCON-1 Design combustion chamber 2 minutes ago"
+                    821 image
+                  834 image
+                  854 image
+                861 generic
+                  862 link "FALCON Falcon Heavy less than a minute ago"
+                  878 button
+                    879 button "E"
+                892 button
+                  893 image
+                899 button "Add sticky"
+                  900 image
+                913 image
+                924 paragraph
+[Warnings]
+WorkspaceHome: QuickLinkButton — 0 matches
+WorkspaceHome: NotificationsLink — 0 matches
+WorkspaceHome: StarOnGitHubLink — 0 matches
+
+
+[Coverage] (visible only)
+150 interactive · 13 direct T1 (9%) · 137 scoped T2 (91%) · 0 orphaned T3 ✓
