@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Arbeitsbereich-Logo",
       "open_workspace_switcher": "Arbeitsbereich-Umschalter öffnen",
+      "open_workspace_menu": "Arbeitsbereich-Menü öffnen",
+      "close_workspace_menu": "Arbeitsbereich-Menü schließen",
       "open_user_menu": "Benutzermenü öffnen",
       "open_command_palette": "Befehlspalette öffnen",
       "open_extended_sidebar": "Erweiterte Seitenleiste öffnen",

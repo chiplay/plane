@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "ワークスペースロゴ",
       "open_workspace_switcher": "ワークスペーススイッチャーを開く",
+      "open_workspace_menu": "ワークスペースメニューを開く",
+      "close_workspace_menu": "ワークスペースメニューを閉じる",
       "open_user_menu": "ユーザーメニューを開く",
       "open_command_palette": "コマンドパレットを開く",
       "open_extended_sidebar": "拡張サイドバーを開く",

@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Логотип робочого простору",
       "open_workspace_switcher": "Відкрити перемикач робочого простору",
+      "open_workspace_menu": "Відкрити меню робочого простору",
+      "close_workspace_menu": "Закрити меню робочого простору",
       "open_user_menu": "Відкрити меню користувача",
       "open_command_palette": "Відкрити палітру команд",
       "open_extended_sidebar": "Відкрити розширену бічну панель",

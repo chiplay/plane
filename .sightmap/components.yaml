@@ -10,7 +10,7 @@ components:
     source: apps/web/core/components/workspace/sidebar/sidebar.tsx
     description: Left navigation sidebar, present on all authenticated views
     memory:
-      - The workspace-menu and extended-sidebar disclosure buttons render broken i18n keys as their aria-labels (aria_labels.app_sidebar.*). Match on those literal strings anyway.
+      - The workspace-menu and extended-sidebar disclosure buttons are labeled "Open/Close workspace menu" and "Open/Close extended sidebar" (fixed 2026-07-26; they previously rendered raw aria_labels.app_sidebar.* i18n keys).
     children:
       - name: CreateWorkItemButton
         selector: '[data-ph-element="sidebar_create_work_item_button"]'

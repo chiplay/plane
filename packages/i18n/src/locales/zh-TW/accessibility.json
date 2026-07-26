@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "工作空間標誌",
       "open_workspace_switcher": "打開工作空間切換器",
+      "open_workspace_menu": "打開工作空間選單",
+      "close_workspace_menu": "關閉工作空間選單",
       "open_user_menu": "打開用戶選單",
       "open_command_palette": "打開命令面板",
       "open_extended_sidebar": "打開擴展側邊欄",

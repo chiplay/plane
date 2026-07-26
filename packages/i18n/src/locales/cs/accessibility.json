@@ -3,6 +3,8 @@
     "projects_sidebar": {
       "workspace_logo": "Logo pracovního prostoru",
       "open_workspace_switcher": "Otevřít přepínač pracovního prostoru",
+      "open_workspace_menu": "Otevřít menu pracovního prostoru",
+      "close_workspace_menu": "Zavřít menu pracovního prostoru",
       "open_user_menu": "Otevřít uživatelské menu",
       "open_command_palette": "Otevřít paletu příkazů",
       "open_extended_sidebar": "Otevřít rozšířený postranní panel",
