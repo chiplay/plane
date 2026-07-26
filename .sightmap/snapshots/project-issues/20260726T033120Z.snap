@@ -1,0 +1,332 @@
+[View: ProjectWorkItems]
+route: /*/projects/*/issues/
+memory:
+  - Rows are anchors with id "issue-<uuid>" and href /:workspaceSlug/browse/:KEY/ — the KEY (e.g. ROCKET-5) is only in the href.
+  - Inside a row the property dropdowns are the buttons with class "clickable", in column order - state, priority, assignee, dates. None has a label; click by position or open the row and edit in the peek panel.
+  - Clicking a row title opens the work item; the row link href navigates to the full-page /browse/ view.
+
+[Guide]
+ContextMenuItem        72
+RowDropdown            36
+PeekNavLink             7
+SidebarNavLink          7
+WorkItemRow             6
+SidebarCollapseButton   4
+ProjectsDisclosure      2
+UserMenuButton          2
+AddWorkItemButton       1
+AppHeader               1
+AppSidebar              1
+CommandSearch           1
+ContextMenuPortal       1
+CreateProjectButton     1
+CreateWorkItemButton    1
+ExtendedSidebarToggle   1
+GitHubStarLink          1
+MainContent             1
+NotificationsLink       1
+SearchInput             1
+SidebarPeekView         1
+WorkspaceSwitcher       1
+
+--- component tree ---
+
+27 generic
+  564 main
+    565 generic
+      566 [AppHeader]
+        569 [WorkspaceSwitcher "Open workspace switcher"]
+          573 heading "Acme Corp"
+          575 image
+        582 generic
+          584 [CommandSearch "Search commands..."]
+            585 image
+            587 [SearchInput "Search commands..."]
+        590 [NotificationsLink]
+          593 image
+        596 [UserMenuButton]
+          597 button
+            599 image
+        603 [GitHubStarLink "Star us on GitHub"]
+        609 [UserMenuButton]
+          610 button "E"
+      617 generic
+        619 generic
+          620 [AppSidebar "Main sidebar"]
+            621 generic
+              628 button
+                629 image
+              631 [SidebarCollapseButton]
+                632 image
+              636 [CreateWorkItemButton "New work item"]
+                637 image
+              643 generic
+                645 [SidebarNavLink "Home"]
+                  648 image
+                  650 paragraph
+                652 [SidebarNavLink "Drafts"]
+                  655 image
+                  657 paragraph
+                659 [SidebarNavLink "Your work"]
+                  662 image
+                  665 paragraph
+                667 [SidebarNavLink "Stickies"]
+                  670 image
+                  672 paragraph
+                676 button "aria_labels.app_sidebar.close_workspace_menu"
+                688 generic
+                  689 [SidebarNavLink "Projects"]
+                    692 image
+                    694 paragraph
+                  697 [ExtendedSidebarToggle "aria_labels.app_sidebar.open_extended_sidebar"]
+                    698 image
+                707 [ProjectsDisclosure "Close projects menu"]
+                711 [CreateProjectButton]
+                714 [ProjectsDisclosure "Close projects menu"]
+                  715 image
+                722 generic
+                  724 group
+                    726 generic
+                      737 link
+                        738 button "Open project menu"
+                          742 paragraph
+                      752 [SidebarCollapseButton]
+                  760 group
+                    762 generic
+                      773 link
+                        774 button "Close project menu"
+                          777 paragraph
+                      787 [SidebarCollapseButton]
+                    795 generic
+                      797 [SidebarNavLink "Work items"]
+                        801 image
+                      805 [SidebarNavLink "Pages"]
+                        809 image
+              817 button "Open paid plans' modal"
+              819 separator "Resize sidebar"
+          820 [SidebarPeekView "Sidebar peek view"]
+            821 generic
+              828 button
+                829 image
+              831 button
+                832 image
+              836 button "New work item"
+                837 image
+              843 generic
+                845 [PeekNavLink "Home"]
+                  848 image
+                  850 paragraph
+                852 [PeekNavLink "Drafts"]
+                  855 image
+                  857 paragraph
+                859 [PeekNavLink "Your work"]
+                  862 image
+                  865 paragraph
+                867 [PeekNavLink "Stickies"]
+                  870 image
+                  872 paragraph
+                876 button "aria_labels.app_sidebar.close_workspace_menu"
+                888 generic
+                  889 [PeekNavLink "Projects"]
+                    892 image
+                    894 paragraph
+                  897 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    898 image
+                907 button "Close projects menu"
+                914 button "Close projects menu"
+                  915 image
+                922 generic
+                  924 group
+                    926 generic
+                      937 link
+                        938 button "Open project menu"
+                          942 paragraph
+                  960 group
+                    962 generic
+                      973 link
+                        974 button "Close project menu"
+                          977 paragraph
+                    995 generic
+                      997 [PeekNavLink "Work items"]
+                        1001 image
+                      1005 [PeekNavLink "Pages"]
+                        1009 image
+              1017 button "Open paid plans' modal"
+              1019 separator "Resize sidebar"
+          1202 [MainContent]
+            1206 generic
+              1209 generic
+                1212 button "..."
+                  1213 button "..."
+                  1222 generic
+                    1225 image
+                1232 link "Work Items"
+                  1233 generic
+                    1235 image
+              1262 button
+                1263 button
+                  1264 image
+                  1266 image
+              1272 button
+                1273 image
+              1280 generic
+                1287 button
+                  1288 image
+              1299 button
+                1303 image
+              1307 [AddWorkItemButton "Add work item"]
+            1344 generic
+              1348 image
+              1357 generic
+              1364 image
+              1366 generic
+                1376 generic
+                  1377 generic
+                    1380 [WorkItemRow]
+                      1381 group
+                        1387 button "ROCKET-6"
+                        1390 paragraph
+                        1394 button
+                          1395 image
+                        1400 generic
+                          1403 [RowDropdown]
+                            1404 button "Todo"
+                              1405 image
+                          1412 [RowDropdown]
+                            1415 image
+                          1420 [RowDropdown]
+                            1421 button
+                              1422 image
+                          1426 [RowDropdown]
+                            1427 button
+                              1428 image
+                          1432 [RowDropdown]
+                            1433 button
+                              1434 image
+                          1438 [RowDropdown]
+                            1440 image
+                  1454 generic
+                    1457 [WorkItemRow]
+                      1458 group
+                        1464 button "ROCKET-5"
+                        1467 paragraph
+                        1471 button
+                          1472 image
+                        1477 generic
+                          1480 [RowDropdown]
+                            1481 button "In Progress"
+                              1482 image
+                          1490 [RowDropdown]
+                            1493 image
+                          1500 [RowDropdown]
+                            1501 button
+                              1502 image
+                          1506 [RowDropdown]
+                            1507 button
+                              1508 image
+                          1512 [RowDropdown]
+                            1513 button
+                              1514 image
+                          1518 [RowDropdown]
+                            1520 image
+                  1534 generic
+                    1537 [WorkItemRow]
+                      1538 group
+                        1544 button "ROCKET-4"
+                        1547 paragraph
+                        1551 button
+                          1552 image
+                        1557 generic
+                          1560 [RowDropdown]
+                            1561 button "Done"
+                              1562 image
+                          1568 [RowDropdown]
+                            1571 image
+                          1576 [RowDropdown]
+                            1577 button
+                              1578 image
+                          1582 [RowDropdown]
+                            1583 button
+                              1584 image
+                          1588 [RowDropdown]
+                            1589 button
+                              1590 image
+                          1594 [RowDropdown]
+                            1596 image
+                  1610 generic
+                    1613 [WorkItemRow]
+                      1614 group
+                        1620 button "ROCKET-3"
+                        1623 paragraph
+                        1627 button
+                          1628 image
+                        1633 generic
+                          1636 [RowDropdown]
+                            1637 button "Todo"
+                              1638 image
+                          1645 [RowDropdown]
+                            1648 image
+                          1655 [RowDropdown]
+                            1656 button
+                              1657 image
+                          1661 [RowDropdown]
+                            1662 button
+                              1663 image
+                          1667 [RowDropdown]
+                            1668 button
+                              1669 image
+                          1673 [RowDropdown]
+                            1675 image
+                  1689 generic
+                    1692 [WorkItemRow]
+                      1693 group
+                        1699 button "ROCKET-2"
+                        1702 paragraph
+                        1706 button
+                          1707 image
+                        1712 generic
+                          1715 [RowDropdown]
+                            1716 button "Todo"
+                              1717 image
+                          1724 [RowDropdown]
+                            1727 image
+                          1733 [RowDropdown]
+                            1734 button
+                              1735 image
+                          1739 [RowDropdown]
+                            1740 button
+                              1741 image
+                          1745 [RowDropdown]
+                            1746 button
+                              1747 image
+                          1751 [RowDropdown]
+                            1753 image
+                  1767 generic
+                    1770 [WorkItemRow]
+                      1771 group
+                        1777 button "ROCKET-1"
+                        1780 paragraph
+                        1784 button
+                          1785 image
+                        1790 generic
+                          1793 [RowDropdown]
+                            1794 button "In Progress"
+                              1795 image
+                          1803 [RowDropdown]
+                            1806 image
+                          1812 [RowDropdown]
+                            1813 button
+                              1814 image
+                          1818 [RowDropdown]
+                            1819 button
+                              1820 image
+                          1824 [RowDropdown]
+                            1825 button
+                              1826 image
+                          1830 [RowDropdown]
+                            1832 image
+                1849 generic
+                  1850 image
+
+[Coverage] (visible only)
+537 interactive · 143 direct T1 (27%) · 394 scoped T2 (73%) · 0 orphaned T3 ✓

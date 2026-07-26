@@ -1,0 +1,31 @@
+version: 1
+
+views:
+  - name: ProjectWorkItems
+    route: /*/projects/*/issues/
+    source: apps/web/app/(all)/[workspaceSlug]/(projects)/projects/[projectId]/issues/page.tsx
+    description: Work item list for one project (default List layout)
+    memory:
+      - Rows are anchors with id "issue-<uuid>" and href /:workspaceSlug/browse/:KEY/ — the KEY (e.g. ROCKET-5) is only in the href.
+      - Inside a row the property dropdowns are the buttons with class "clickable", in column order - state, priority, assignee, dates. None has a label; click by position or open the row and edit in the peek panel.
+      - Clicking a row title opens the work item; the row link href navigates to the full-page /browse/ view.
+    components:
+      - name: WorkItemRow
+        selector: 'a[href*="/browse/"]'
+        properties:
+          - name: key
+            extract: attr=href
+            transform: 'match:([A-Z][A-Z0-9]*-\d+)'
+          - name: title
+            extract: 'p'
+          - name: state
+            extract: 'button.clickable'
+        children:
+          - name: RowDropdown
+            selector: 'button.clickable'
+            properties:
+              - name: label
+                extract: text
+      - name: AddWorkItemButton
+        selector: '[data-ph-element="work_items_header_add_work_item_button"]'
+        description: Toolbar button - opens the create work item modal for this project

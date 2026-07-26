@@ -1,0 +1,258 @@
+[View: WorkItemDetail]
+route: /*/browse/*/
+memory:
+  - The work item key (e.g. ROCKET-1) is the last URL segment; the page shows it as a small button next to the title.
+  - The title is a textarea with placeholder "Work item title"; edits autosave on blur, there is no Save button.
+  - Right-hand Properties panel, top to bottom - State, Assignees, Priority, Start date, Due date, Parent, Labels. Each is an unlabeled button showing the current value; click opens its dropdown.
+  - The description editor toolbar buttons are icon-only with no accessible names.
+
+[Guide]
+PeekNavLink            5
+SidebarNavLink         5
+ContextMenuItem        4
+SidebarCollapseButton  4
+ProjectsDisclosure     2
+UserMenuButton         2
+AppHeader              1
+AppSidebar             1
+CommandSearch          1
+ContextMenuPortal      1
+CreateProjectButton    1
+CreateWorkItemButton   1
+ExtendedSidebarToggle  1
+GitHubStarLink         1
+MainContent            1
+NotificationsLink      1
+SearchInput            1
+SidebarPeekView        1
+WorkspaceSwitcher      1
+
+--- component tree ---
+
+28 generic
+  69 main
+    70 generic
+      71 [AppHeader]
+        74 [WorkspaceSwitcher "Open workspace switcher"]
+          78 heading "Acme Corp"
+          80 image
+        87 generic
+          89 [CommandSearch "Search commands..."]
+            90 image
+            92 [SearchInput "Search commands..."]
+        95 [NotificationsLink]
+          98 image
+        101 [UserMenuButton]
+          102 button
+            104 image
+        108 [GitHubStarLink "Star us on GitHub"]
+        114 [UserMenuButton]
+          115 button "E"
+      122 generic
+        124 generic
+          125 [AppSidebar "Main sidebar"]
+            126 generic
+              133 button
+                134 image
+              136 [SidebarCollapseButton]
+                137 image
+              141 [CreateWorkItemButton "New work item"]
+                142 image
+              148 generic
+                150 [SidebarNavLink "Home"]
+                  153 image
+                  155 paragraph
+                157 [SidebarNavLink "Drafts"]
+                  160 image
+                  162 paragraph
+                164 [SidebarNavLink "Your work"]
+                  167 image
+                  170 paragraph
+                172 [SidebarNavLink "Stickies"]
+                  175 image
+                  177 paragraph
+                181 button "aria_labels.app_sidebar.close_workspace_menu"
+                193 generic
+                  194 [SidebarNavLink "Projects"]
+                    197 image
+                    199 paragraph
+                  202 [ExtendedSidebarToggle "aria_labels.app_sidebar.open_extended_sidebar"]
+                    203 image
+                212 [ProjectsDisclosure "Close projects menu"]
+                216 [CreateProjectButton]
+                219 [ProjectsDisclosure "Close projects menu"]
+                  220 image
+                227 generic
+                  229 group
+                    231 generic
+                      242 link
+                        243 button "Open project menu"
+                          247 paragraph
+                      257 [SidebarCollapseButton]
+                  265 group
+                    267 generic
+                      278 link
+                        279 button "Open project menu"
+                          282 paragraph
+                      292 [SidebarCollapseButton]
+              303 button "Open paid plans' modal"
+              305 separator "Resize sidebar"
+          306 [SidebarPeekView "Sidebar peek view"]
+            307 generic
+              314 button
+                315 image
+              317 button
+                318 image
+              322 button "New work item"
+                323 image
+              329 generic
+                331 [PeekNavLink "Home"]
+                  334 image
+                  336 paragraph
+                338 [PeekNavLink "Drafts"]
+                  341 image
+                  343 paragraph
+                345 [PeekNavLink "Your work"]
+                  348 image
+                  351 paragraph
+                353 [PeekNavLink "Stickies"]
+                  356 image
+                  358 paragraph
+                362 button "aria_labels.app_sidebar.close_workspace_menu"
+                374 generic
+                  375 [PeekNavLink "Projects"]
+                    378 image
+                    380 paragraph
+                  383 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    384 image
+                393 button "Close projects menu"
+                400 button "Close projects menu"
+                  401 image
+                408 generic
+                  410 group
+                    412 generic
+                      423 link
+                        424 button "Open project menu"
+                          428 paragraph
+                  446 group
+                    448 generic
+                      459 link
+                        460 button "Open project menu"
+                          463 paragraph
+              484 button "Open paid plans' modal"
+              486 separator "Resize sidebar"
+          650 [MainContent]
+            654 generic
+              656 generic
+                659 button "..."
+                  660 button "..."
+                  669 generic
+                    672 image
+                679 link "Work Items"
+                  680 generic
+                    682 image
+                688 image
+              702 button "Unsubscribe"
+                703 image
+              711 button
+                712 image
+              719 button
+                720 button
+                  721 image
+            728 generic
+              732 button "ROCKET-1"
+              739 generic
+                740 textbox "Work item title" value="Fix login redirect loop"
+              749 generic
+              767 button
+                769 button
+                  770 image
+              779 button "Last edited by eval 21 minutes ago"
+                782 image
+                786 paragraph
+                791 image
+              800 button
+                801 button "Add sub-work item"
+                  802 image
+              811 button
+                812 button "Add relation"
+                  813 image
+              817 button
+                818 button "Add link"
+                  819 image
+              824 button "Choose File: No file chosen Attach"
+                825 button "Choose File" value="No file chosen"
+                826 button "Attach"
+                  827 image
+              838 button
+                839 image
+              847 button
+                848 button
+                  849 image
+              858 generic
+                863 generic
+                  864 link "eval"
+              873 generic
+                888 button
+                  889 image
+                891 button
+                  892 image
+                896 button
+                  897 image
+                900 button
+                  901 image
+                906 button
+                  907 image
+                911 button
+                  912 image
+                916 button
+                  917 image
+                922 button
+                  923 image
+                930 button
+                  931 image
+                938 button
+                  939 image
+                946 button
+                  947 image
+                952 button
+                  953 image
+                958 button
+                  959 image
+                964 button "Comment"
+            968 generic
+              969 heading "Properties"
+              971 generic
+                974 image
+                984 button
+                  985 button "In Progress"
+                    986 image
+                1000 image
+                1006 button
+                  1007 button "Add assignees"
+                1018 image
+                1024 button "Urgent"
+                  1027 image
+                1035 image
+                1052 image
+                1058 button
+                  1059 button "Add start date"
+                1064 image
+                1071 button
+                  1072 button "Add due date"
+                1077 image
+                1084 button "Add parent work item"
+                  1088 image
+                1096 image
+                1108 button "Add labels"
+                  1109 image
+
+[Snapshot check] WorkItemDetail: view root components all unmatched — wrong page captured? (expected: WorkItemTitleInput, UnsubscribeButton)
+
+[Warnings]
+WorkItemDetail: WorkItemTitleInput — 0 matches
+WorkItemDetail: UnsubscribeButton — 0 matches
+
+
+[Coverage] (visible only)
+217 interactive · 28 direct T1 (13%) · 189 scoped T2 (87%) · 0 orphaned T3 ✓

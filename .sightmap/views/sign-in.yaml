@@ -1,0 +1,25 @@
+version: 1
+
+views:
+  - name: SignIn
+    route: /
+    source: apps/web/app/(all)/(auth)/page.tsx
+    description: Email-first sign-in page (shown at / when logged out)
+    memory:
+      - Two-step flow — submit the email first; the password field only mounts afterwards, and the submit button is labeled "Go to workspace".
+      - When already authenticated, / immediately client-redirects to /:workspaceSlug/ — this view then no longer applies.
+    components:
+      - name: SignInForm
+        selector: 'form'
+        children:
+          - name: EmailInput
+            selector: 'input[name="email"]'
+          - name: PasswordInput
+            selector: 'input[name="password"]'
+          - name: ContinueButton
+            selector: 'button[type="submit"]'
+            properties:
+              - name: label
+                extract: text
+      - name: SignUpLink
+        selector: 'a[href="/sign-up/"]'

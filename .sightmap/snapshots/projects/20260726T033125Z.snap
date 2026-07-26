@@ -1,0 +1,183 @@
+[View: ProjectsList]
+route: /*/projects/
+memory:
+  - Clicking a project card navigates straight to that project's work items list (/projects/:projectId/issues/).
+  - The page renders lazily; a fresh navigation shows only a logo for 1-3 seconds.
+
+[Guide]
+PeekNavLink            5
+SidebarNavLink         5
+ContextMenuItem        4
+ProjectCardMenu        4
+SidebarCollapseButton  4
+ProjectCard            2
+ProjectsDisclosure     2
+UserMenuButton         2
+AddProjectButton       1
+AppHeader              1
+AppSidebar             1
+CommandSearch          1
+ContextMenuPortal      1
+CreateProjectButton    1
+CreateWorkItemButton   1
+ExtendedSidebarToggle  1
+GitHubStarLink         1
+MainContent            1
+NotificationsLink      1
+SearchInput            1
+SidebarPeekView        1
+WorkspaceSwitcher      1
+
+--- component tree ---
+
+27 generic
+  70 main
+    71 generic
+      72 [AppHeader]
+        75 [WorkspaceSwitcher "Open workspace switcher"]
+          79 heading "Acme Corp"
+          81 image
+        88 generic
+          90 [CommandSearch "Search commands..."]
+            91 image
+            93 [SearchInput "Search commands..."]
+        96 [NotificationsLink]
+          99 image
+        102 [UserMenuButton]
+          103 button
+            105 image
+        109 [GitHubStarLink "Star us on GitHub"]
+        115 [UserMenuButton]
+          116 button "E"
+      123 generic
+        125 generic
+          126 [AppSidebar "Main sidebar"]
+            127 generic
+              134 button
+                135 image
+              137 [SidebarCollapseButton]
+                138 image
+              142 [CreateWorkItemButton "New work item"]
+                143 image
+              149 generic
+                151 [SidebarNavLink "Home"]
+                  154 image
+                  156 paragraph
+                158 [SidebarNavLink "Drafts"]
+                  161 image
+                  163 paragraph
+                165 [SidebarNavLink "Your work"]
+                  168 image
+                  171 paragraph
+                173 [SidebarNavLink "Stickies"]
+                  176 image
+                  178 paragraph
+                182 button "aria_labels.app_sidebar.close_workspace_menu"
+                194 generic
+                  195 [SidebarNavLink "Projects"]
+                    198 image
+                    200 paragraph
+                  203 [ExtendedSidebarToggle "aria_labels.app_sidebar.open_extended_sidebar"]
+                    204 image
+                213 [ProjectsDisclosure "Close projects menu"]
+                217 [CreateProjectButton]
+                220 [ProjectsDisclosure "Close projects menu"]
+                  221 image
+                228 generic
+                  230 group
+                    232 generic
+                      243 link
+                        244 button "Open project menu"
+                          248 paragraph
+                      258 [SidebarCollapseButton]
+                  266 group
+                    268 generic
+                      279 link
+                        280 button "Open project menu"
+                          283 paragraph
+                      293 [SidebarCollapseButton]
+              304 button "Open paid plans' modal"
+              306 separator "Resize sidebar"
+          307 [SidebarPeekView "Sidebar peek view"]
+            308 generic
+              315 button
+                316 image
+              318 button
+                319 image
+              323 button "New work item"
+                324 image
+              330 generic
+                332 [PeekNavLink "Home"]
+                  335 image
+                  337 paragraph
+                339 [PeekNavLink "Drafts"]
+                  342 image
+                  344 paragraph
+                346 [PeekNavLink "Your work"]
+                  349 image
+                  352 paragraph
+                354 [PeekNavLink "Stickies"]
+                  357 image
+                  359 paragraph
+                363 button "aria_labels.app_sidebar.close_workspace_menu"
+                375 generic
+                  376 [PeekNavLink "Projects"]
+                    379 image
+                    381 paragraph
+                  384 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    385 image
+                394 button "Close projects menu"
+                401 button "Close projects menu"
+                  402 image
+                409 generic
+                  411 group
+                    413 generic
+                      424 link
+                        425 button "Open project menu"
+                          429 paragraph
+                  447 group
+                    449 generic
+                      460 link
+                        461 button "Open project menu"
+                          464 paragraph
+              485 button "Open paid plans' modal"
+              487 separator "Resize sidebar"
+          651 [MainContent]
+            655 generic
+              659 generic
+                661 image
+              667 button
+                668 image
+              677 button "Created date"
+                680 image
+              688 generic
+                699 button "Filters"
+              702 [AddProjectButton "Add Project"]
+            739 [ProjectCard "Rocket Ship ROCKET Flagship product project E"]
+              740 generic
+                743 generic
+                  748 heading "Rocket Ship"
+                  751 paragraph
+                  754 [ProjectCardMenu]
+                    755 image
+                  757 [ProjectCardMenu]
+                    758 image
+              761 paragraph
+              771 link
+                772 image
+            775 [ProjectCard "Acme Corp 👇 Acme Corp ACMEC Welcome to the Plane Demo Project! This project thro…"]
+              776 generic
+                778 image "Acme Corp"
+                779 generic
+                  785 heading "Acme Corp"
+                  788 paragraph
+                  791 [ProjectCardMenu]
+                    792 image
+                  794 [ProjectCardMenu]
+                    795 image
+              798 paragraph
+              808 link
+                809 image
+
+[Coverage] (visible only)
+169 interactive · 35 direct T1 (21%) · 134 scoped T2 (79%) · 0 orphaned T3 ✓

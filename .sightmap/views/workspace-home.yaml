@@ -1,0 +1,10 @@
+version: 1
+
+views:
+  - name: WorkspaceHome
+    route: /*/
+    source: apps/web/app/(all)/[workspaceSlug]/(projects)/page.tsx
+    description: Workspace landing page — greeting, quick links, recents
+    memory:
+      - This is the default landing page after sign-in; the URL is just /:workspaceSlug/.
+      - The center widgets (Quick links, Stickies, Recents, "Manage widgets") render no stable attributes — no ids, no data-* hooks. They are only reachable as T2 under MainContent; drive them by accessible name.

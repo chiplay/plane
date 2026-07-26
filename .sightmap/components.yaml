@@ -1,0 +1,86 @@
+version: 1
+
+memory:
+  - URLs embed the workspace slug as the first path segment (/:workspaceSlug/...). Selectors keyed on href must use suffix matches (href$=) to stay portable across workspaces.
+  - The app is a client-rendered React Router SPA; content mounts well after load. Use --wait 1 or retry a snapshot that looks empty.
+
+components:
+  - name: AppSidebar
+    selector: '#main-sidebar'
+    source: apps/web/core/components/workspace/sidebar/sidebar.tsx
+    description: Left navigation sidebar, present on all authenticated views
+    memory:
+      - The workspace-menu and extended-sidebar disclosure buttons render broken i18n keys as their aria-labels (aria_labels.app_sidebar.*). Match on those literal strings anyway.
+    children:
+      - name: CreateWorkItemButton
+        selector: '[data-ph-element="sidebar_create_work_item_button"]'
+        description: Opens the new work item modal from anywhere
+      - name: SidebarNavLink
+        selector: 'a[data-discover="true"]'
+        properties:
+          - name: label
+            extract: text
+          - name: href
+            extract: attr=href
+      - name: ProjectsDisclosure
+        selector:
+          - 'button[aria-label="Close projects menu"]'
+          - 'button[aria-label="Open projects menu"]'
+        description: Expands or collapses the projects section
+      - name: ExtendedSidebarToggle
+        selector: '#extended-sidebar-toggle'
+      - name: CreateProjectButton
+        selector: '[data-ph-element="sidebar_create_project_tooltip"]'
+      - name: SidebarCollapseButton
+        selector: 'button:has(> svg rect)'
+        description: Collapses the sidebar rail
+
+  - name: WorkspaceSwitcher
+    selector: 'button[aria-label="Open workspace switcher"]'
+    description: Workspace dropdown in the top-left; shows the active workspace name
+
+  - name: CommandSearch
+    selector: 'div[role="button"]:has(> input[type="text"])'
+    description: Global command palette trigger (also opens with Cmd/Ctrl+K)
+    children:
+      - name: SearchInput
+        selector: 'input[type="text"]'
+
+  - name: NotificationsLink
+    selector: 'a[href$="/notifications/"]'
+
+  - name: AppHeader
+    selector: 'div.z-\[27\]'
+    description: Top bar — workspace switcher, command search, notifications, user menu
+    children:
+      - name: GitHubStarLink
+        selector: 'a[href*="github.com/makeplane"]'
+      - name: UserMenuButton
+        selector: 'button[aria-haspopup="menu"]:not([aria-label])'
+        description: Avatar menus without aria-labels (user + app menus)
+
+  - name: SidebarPeekView
+    selector: '[aria-label="Sidebar peek view"]'
+    description: Off-canvas duplicate of the sidebar used for hover-peek when the rail is collapsed. Rendered at translate-x(-100%) with opacity 0.
+    memory:
+      - This drawer duplicates every sidebar control off-screen. It is present in the DOM but not operable (pointer-events none) until peeked.
+    children:
+      - name: PeekNavLink
+        selector: 'a[data-discover="true"]'
+        properties:
+          - name: label
+            extract: text
+
+  - name: MainContent
+    selector: 'main main'
+    description: Inner content region of the current page (nested main landmark)
+
+  - name: ContextMenuPortal
+    selector: '#context-menu-portal'
+    description: Portal holding right-click / quick-action context menus. Menus are pre-rendered here (pointer-events none) even while closed.
+    children:
+      - name: ContextMenuItem
+        selector: 'button'
+        properties:
+          - name: label
+            extract: text
