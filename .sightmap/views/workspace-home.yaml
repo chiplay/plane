@@ -1,0 +1,14 @@
+version: 1
+views:
+  - name: WorkspaceHome
+    route: /:workspaceSlug
+    url: http://localhost:3000/acme-rockets/
+    description: Workspace landing page with onboarding widgets, quick links, recents, stickies
+    source: apps/web/app/routes/core.ts
+    memory:
+      - First visit shows onboarding cards (Take a Product Tour / No thanks) with no stable selectors
+      - Recents section lists recently visited projects/issues as links
+    components:
+      - name: HomeContent
+        selector: 'main main'
+        description: Scrollable home widget region (widgets lack stable hooks; T2 catch-all)

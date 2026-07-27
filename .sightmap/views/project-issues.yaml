@@ -1,0 +1,29 @@
+version: 1
+views:
+  - name: ProjectIssues
+    route: /:workspaceSlug/projects/:projectId/issues
+    url: http://localhost:3000/acme-rockets/projects/169f51f4-98cd-4215-8c3c-d563cbf864fb/issues
+    description: Work items list for one project (List layout default)
+    source: apps/web/app/routes/core.ts
+    memory:
+      - Row containers use dynamic ids (issue_<uuid>) — offline matcher cannot key on [id^=]; only the title link is stably selectable
+      - Each row carries ~13 unlabeled dropdown buttons (state, priority, dates, assignee) with no stable hooks — they stay T2 under WorkItemList
+      - Clicking a work item title navigates to /:workspaceSlug/browse/:workItem (full page), not a modal
+    components:
+      - name: WorkItemList
+        selector: 'div[data-drop-target-for-element]:has(div[data-drop-target-for-element])'
+        description: List layout root containing group headers and rows
+        children:
+          - name: WorkItemLink
+            selector: 'a[href*="/browse/"]'
+            properties:
+              - name: workItem
+                extract: attr=href
+                transform: 'match:browse/([A-Z0-9]+-[0-9]+)'
+              - name: title
+                extract: text
+      - name: AddWorkItemButton
+        selector: '[data-ph-element="work_items_header_add_work_item_button"]'
+        properties:
+          - name: label
+            extract: text

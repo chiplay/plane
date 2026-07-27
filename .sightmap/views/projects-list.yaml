@@ -1,0 +1,12 @@
+version: 1
+views:
+  - name: ProjectsList
+    route: /:workspaceSlug/projects
+    description: All projects in the workspace
+    source: apps/web/app/routes/core.ts
+    components:
+      - name: ProjectCard
+        selector: 'a[href*="/projects/"][href*="/issues"]'
+        properties:
+          - name: projectName
+            extract: text
