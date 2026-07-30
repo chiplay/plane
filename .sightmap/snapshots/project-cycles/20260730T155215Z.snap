@@ -1,0 +1,143 @@
+[View: ProjectCycles]
+route: /*/projects/*/cycles
+memory:
+  - Cycle rows link to /<ws>/projects/<projectId>/cycles/<cycleId>
+
+[Guide]
+SidebarLink        10
+CycleItemLink       3
+CommandSearch       2
+AppSidebar          1
+GitHubStarLink      1
+NewWorkItemButton   1
+NotificationsLink   1
+WorkspaceSwitcher   1
+
+--- component tree ---
+
+27 generic
+  124 main
+    125 generic
+      129 [WorkspaceSwitcher "Open workspace switcher"]
+        133 heading "Falcon Corp"
+        135 image
+      142 generic
+        144 button "Search commands..."
+          145 image
+          147 [CommandSearch "Search commands..."]
+      150 [NotificationsLink]
+        153 image
+      156 button
+        157 button
+          159 image
+      163 [GitHubStarLink "Star us on GitHub"]
+      169 button
+        170 button "C"
+      177 generic
+        179 generic
+          180 [AppSidebar "Main sidebar"]
+            181 generic
+              188 button
+                189 image
+              191 button
+                192 image
+              196 [NewWorkItemButton "New work item"]
+                197 image
+              203 generic
+                205 [SidebarLink "Home"]
+                  208 image
+                  210 paragraph
+                212 [SidebarLink "Drafts"]
+                  215 image
+                  217 paragraph
+                219 [SidebarLink "Your work"]
+                  222 image
+                  225 paragraph
+                227 [SidebarLink "Stickies"]
+                  230 image
+                  232 paragraph
+                236 button "aria_labels.app_sidebar.close_workspace_menu"
+                248 generic
+                  249 [SidebarLink "Projects"]
+                    252 image
+                    254 paragraph
+                  257 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    258 image
+                267 button "Close projects menu"
+                274 button "Close projects menu"
+                  275 image
+                284 group
+                  286 generic
+                    297 [SidebarLink]
+                      298 button "Close project menu"
+                        301 paragraph
+                  319 generic
+                    321 [SidebarLink "Work items"]
+                      325 image
+                    329 [SidebarLink "Cycles"]
+                      333 image
+                    342 [SidebarLink "Modules"]
+                      346 image
+                    354 [SidebarLink "Pages"]
+                      358 image
+              366 button "Open paid plans' modal"
+              368 separator "Resize sidebar"
+          729 main
+            733 generic
+              735 generic
+                738 button "..."
+                  739 button "..."
+                  748 generic
+                    751 image
+                758 link "Cycles"
+                  759 generic
+                    761 image
+              772 button
+                773 image
+              776 generic
+                787 button "Filters"
+              790 button "Add cycle"
+            807 generic
+              809 button "Active cycle"
+                813 image
+                823 image
+              833 generic
+                834 [CycleItemLink "25% Sprint 1"]
+                  837 generic
+                    838 image
+              855 generic
+                856 button "More details"
+                  857 image
+                864 image
+                880 button
+                  881 image
+                886 button
+                  887 button
+                    888 image
+              897 heading "Progress"
+              909 generic
+              917 generic
+              925 generic
+              933 generic
+              942 [CycleItemLink]
+                943 heading "Work item burndown"
+              945 [CycleItemLink "Pending work items - 3 Current work items Ideal work items"]
+                954 generic
+                  955 SvgRoot
+              1096 tablist
+                1097 tab "Priority work items"
+                1099 tab "Assignees"
+                1101 tab "Labels"
+              1104 tabpanel "Assignees"
+                1109 image "User"
+              1122 button "Upcoming cycle 0"
+                1126 image
+                1136 generic
+                1141 image
+              1149 button "Completed cycle 0"
+                1153 image
+                1156 generic
+                1161 image
+
+[Coverage] (visible only)
+123 interactive · 19 direct T1 (15%) · 51 scoped T2 (41%) · 53 orphaned T3 ✗

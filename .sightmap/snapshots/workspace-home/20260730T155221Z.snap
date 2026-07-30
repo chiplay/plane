@@ -1,0 +1,107 @@
+[View: WorkspaceHome]
+route: /*
+memory:
+  - The greeting header, quick links, and widget list are personal (per-user), not workspace data
+  - "Manage widgets" opens a right-hand drawer; it covers the widgets while open
+
+[Guide]
+SidebarLink        6
+CommandSearch      3
+AppSidebar         1
+GitHubStarLink     1
+NewWorkItemButton  1
+NotificationsLink  1
+WorkspaceSwitcher  1
+
+--- component tree ---
+
+27 generic
+  40 main
+    41 generic
+      45 [WorkspaceSwitcher "Open workspace switcher"]
+        49 heading "Falcon Corp"
+        51 image
+      58 generic
+        60 button "Search commands..."
+          61 image
+          63 [CommandSearch "Search commands..."]
+      66 [NotificationsLink]
+        69 image
+      72 button
+        73 button
+          75 image
+      79 [GitHubStarLink "Star us on GitHub"]
+      85 button
+        86 button "C"
+      93 generic
+        95 generic
+          96 [AppSidebar "Main sidebar"]
+            97 generic
+              104 button
+                105 image
+              107 button
+                108 image
+              112 [NewWorkItemButton "New work item"]
+                113 image
+              119 generic
+                121 [SidebarLink "Home"]
+                  124 image
+                  126 paragraph
+                128 [SidebarLink "Drafts"]
+                  131 image
+                  133 paragraph
+                135 [SidebarLink "Your work"]
+                  138 image
+                  141 paragraph
+                143 [SidebarLink "Stickies"]
+                  146 image
+                  148 paragraph
+                152 button "aria_labels.app_sidebar.close_workspace_menu"
+                164 generic
+                  165 [SidebarLink "Projects"]
+                    168 image
+                    170 paragraph
+                  173 button "aria_labels.app_sidebar.open_extended_sidebar"
+                    174 image
+                183 button "Close projects menu"
+                190 button "Close projects menu"
+                  191 image
+                200 group
+                  202 generic
+                    213 [SidebarLink]
+                      214 button "Open project menu"
+                        217 paragraph
+              238 button "Open paid plans' modal"
+              240 separator "Resize sidebar"
+          513 main
+            517 generic
+              522 generic
+                524 image
+              529 button "Manage widgets"
+                530 image
+            541 heading "Good afternoon, Chip Lay"
+            547 heading "🌥️ Thursday, Jul 30 15:52"
+            562 button "Add quick Link"
+              563 image
+            572 image
+            585 paragraph
+            593 button
+              594 button "All"
+                597 image
+            608 image
+            621 paragraph
+            630 button
+              631 image
+            637 button "Add sticky"
+              638 image
+            651 image
+            662 paragraph
+
+[Snapshot check] WorkspaceHome: view root components all unmatched — wrong page captured? (expected: AddStickyButton)
+
+[Warnings]
+WorkspaceHome: AddStickyButton — 0 matches
+
+
+[Coverage] (visible only)
+69 interactive · 12 direct T1 (17%) · 37 scoped T2 (54%) · 20 orphaned T3 ✗

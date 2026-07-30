@@ -1,0 +1,32 @@
+version: 1
+
+views:
+  - name: ProjectWorkItems
+    route: /*/projects/*/issues
+    url: http://localhost:3000/falcon/projects/4d4d7286-38e5-4043-a368-9732f8faf14c/issues/
+    source: apps/web/app/routes/core/projects/issues.tsx
+    memory:
+      - Clicking a WorkItemRow triggers SPA navigation after the click returns — follow with 'wait-for --url /browse/' before snapshotting
+      - Work item rows use dynamic ids issue-<uuid>; match on the prefix, never the full id
+    components:
+      - name: AddWorkItemButton
+        selector: '[data-ph-element="work_items_header_add_work_item_button"]'
+        source: apps/web/core/components/issues/header.tsx
+        memory:
+          - Opens the CreateWorkItemModal; the modal traps focus until Discard or Create
+      - name: WorkItemRow
+        selector: 'a[id^="issue-"]'
+        properties:
+          - name: key
+            extract: text
+            transform: 'match:(FALCON-\d+)'
+          - name: title
+            extract: p
+          - name: state
+            extract: text
+            transform: 'match:(Backlog|Todo|In Progress|Done|Cancelled)'
+        children:
+          - name: QuickActionsMenu
+            selector: 'button[id^="headlessui-menu-button"]'
+        memory:
+          - State/priority/assignee chips inside a row are unlabeled icon buttons with no stable attributes (tailwind-only); identify them by reading the row's properties instead of clicking blind

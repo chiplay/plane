@@ -1,0 +1,41 @@
+version: 1
+
+requests:
+  - name: SignIn
+    route: /auth/sign-in/
+    method: POST
+    source: apps/api/plane/authentication/views/app/email.py
+    request:
+      fields:
+        - name: email
+          type: string
+        - name: password
+          type: string
+        - name: csrfmiddlewaretoken
+          type: string
+    memory:
+      - Form-encoded, not JSON; requires a CSRF token from GET /auth/get-csrf-token/ and responds 302 to the web app on success
+
+  - name: CurrentUser
+    route: /api/users/me/
+    method: GET
+    response:
+      fields:
+        - name: id
+          type: string
+        - name: email
+          type: string
+
+  - name: ListProjectIssues
+    route: /api/workspaces/*/projects/*/issues/
+    method: GET
+    source: apps/api/plane/app/views/issue/base.py
+    memory:
+      - Returns a paginated envelope, not a bare array; rows are under results
+
+  - name: ListProjectCycles
+    route: /api/workspaces/*/projects/*/cycles/
+    method: GET
+    source: apps/api/plane/app/views/cycle/base.py
+    memory:
+      - Cycles/modules 404 at the UI level unless the project has cycle_view/module_view enabled (PATCH the project to toggle)

@@ -1,0 +1,13 @@
+version: 1
+
+views:
+  - name: WorkspaceHome
+    route: /*
+    url: http://localhost:3000/falcon/
+    memory:
+      - The greeting header, quick links, and widget list are personal (per-user), not workspace data
+      - '"Manage widgets" opens a right-hand drawer; it covers the widgets while open'
+    components:
+      - name: AddStickyButton
+        selector: 'button:has(> svg.lucide-plus)'
+        stability: uncertain
