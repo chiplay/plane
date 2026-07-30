@@ -1,0 +1,44 @@
+[View: LoginPage]
+route: /
+memory:
+  - Root URL shows the login form only when unauthenticated; with a session it redirects client-side to /<workspace-slug>/
+  - Login is two-step; submitting a valid email swaps the form to add a Password field and a "Go to workspace" submit button
+
+[Guide]
+ContinueButton  1
+EmailInput      1
+
+--- component tree ---
+
+27 generic
+  34 main
+    36 generic
+      37 generic
+        38 link
+          39 image
+        53 link "Sign up"
+      56 generic
+        62 generic
+          64 LabelText
+          67 [EmailInput "Email"]
+          68 [ContinueButton "Continue"]
+        71 paragraph
+          75 link "Terms of Service"
+          78 link "Privacy Policy"
+      86 image
+      90 image
+      93 image
+      102 image
+[Warnings]
+LoginPage: PasswordInput — 0 matches
+LoginPage: AppSidebar — 0 matches
+LoginPage: SidebarLink — 0 matches
+LoginPage: NewWorkItemButton — 0 matches
+LoginPage: WorkspaceSwitcher — 0 matches
+LoginPage: NotificationsLink — 0 matches
+LoginPage: CommandSearch — 0 matches
+LoginPage: GitHubStarLink — 0 matches
+
+
+[Coverage] (visible only)
+7 interactive · 2 direct T1 (29%) · 0 scoped T2 (0%) · 5 orphaned T3 ✗

@@ -1,0 +1,1610 @@
+{
+  "id": "1",
+  "role": "none",
+  "name": "",
+  "value": "",
+  "selector": {
+    "tag": "html",
+    "classes": ["bprogress-busy"],
+    "attrs": { "class": "bprogress-busy", "data-theme": "light" }
+  },
+  "bounds": { "x": 0, "y": 0, "width": 780, "height": 441 },
+  "isVisible": true,
+  "isInteractive": false,
+  "inViewport": true,
+  "isIgnored": true,
+  "nthChild": 1,
+  "children": [
+    {
+      "id": "2",
+      "role": "none",
+      "name": "",
+      "value": "",
+      "selector": { "tag": "head" },
+      "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+      "isVisible": false,
+      "isInteractive": false,
+      "inViewport": false,
+      "isIgnored": true,
+      "nthChild": 1,
+      "children": [
+        {
+          "id": "3",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta" },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 1
+        },
+        {
+          "id": "4",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "viewport" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 2
+        },
+        {
+          "id": "5",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "theme-color" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 3
+        },
+        {
+          "id": "6",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "application-name" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 4
+        },
+        {
+          "id": "7",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "apple-mobile-web-app-capable" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 5
+        },
+        {
+          "id": "8",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "apple-mobile-web-app-status-bar-style" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 6
+        },
+        {
+          "id": "9",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "apple-mobile-web-app-title" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 7
+        },
+        {
+          "id": "10",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "format-detection" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 8
+        },
+        {
+          "id": "11",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "mobile-web-app-capable" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 9
+        },
+        {
+          "id": "12",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "robots" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 10
+        },
+        {
+          "id": "13",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "meta", "attrs": { "name": "viewport" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 11
+        },
+        {
+          "id": "14",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": {
+            "tag": "link",
+            "attrs": { "href": "/app/assets/favicon/favicon-32x32.png", "type": "image/png" }
+          },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 12
+        },
+        {
+          "id": "15",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": {
+            "tag": "link",
+            "attrs": { "href": "/app/assets/favicon/favicon-16x16.png", "type": "image/png" }
+          },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 13
+        },
+        {
+          "id": "16",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/app/assets/favicon/favicon.ico" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 14
+        },
+        {
+          "id": "17",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/site.webmanifest.json" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 15
+        },
+        {
+          "id": "18",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/app/assets/icons/icon-512x512.png" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 16
+        },
+        {
+          "id": "19",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/app/assets/icons/icon-180x180.png" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 17
+        },
+        {
+          "id": "20",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/app/assets/icons/icon-512x512.png" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 18
+        },
+        {
+          "id": "21",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/manifest.json" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 19
+        },
+        {
+          "id": "22",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "link", "attrs": { "href": "/styles/globals.css" } },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 20
+        },
+        {
+          "id": "23",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": {
+            "tag": "link",
+            "attrs": {
+              "href": "/@fs/home/user/plane/node_modules/.pnpm/@fontsource-variable+inter@5.2.8/node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2",
+              "type": "font/woff2"
+            }
+          },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 21
+        },
+        {
+          "id": "24",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": {
+            "tag": "style",
+            "attrs": {
+              "data-vite-dev-id": "/home/user/plane/node_modules/.pnpm/@bprogress+core@1.3.4/node_modules/@bprogress/core/dist/index.css",
+              "type": "text/css"
+            }
+          },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 22
+        },
+        {
+          "id": "25",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "title" },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 23
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "role": "generic",
+      "name": "",
+      "value": "",
+      "selector": { "tag": "body" },
+      "bounds": { "x": 0, "y": 0, "width": 780, "height": 441 },
+      "isVisible": true,
+      "isInteractive": false,
+      "inViewport": true,
+      "isIgnored": false,
+      "nthChild": 2,
+      "children": [
+        {
+          "id": "28",
+          "role": "generic",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "div", "id": "context-menu-portal" },
+          "bounds": { "x": 0, "y": 0, "width": 780, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": false,
+          "nthChild": 1
+        },
+        {
+          "id": "29",
+          "role": "generic",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "div", "id": "editor-portal" },
+          "bounds": { "x": 0, "y": 0, "width": 780, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": false,
+          "nthChild": 2
+        },
+        {
+          "id": "30",
+          "role": "none",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "script" },
+          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": true,
+          "nthChild": 3
+        },
+        {
+          "id": "31",
+          "role": "generic",
+          "name": "",
+          "value": "",
+          "selector": { "tag": "div", "id": ":r5:", "attrs": { "data-base-ui-portal": "" } },
+          "bounds": { "x": 0, "y": 0, "width": 780, "height": 0 },
+          "isVisible": false,
+          "isInteractive": false,
+          "inViewport": false,
+          "isIgnored": false,
+          "nthChild": 4,
+          "children": [
+            {
+              "id": "32",
+              "role": "region",
+              "name": "Notifications",
+              "value": "",
+              "properties": { "atomic": "false", "focusable": "true", "live": "polite", "relevant": "additions text" },
+              "selector": {
+                "tag": "div",
+                "attrs": {
+                  "aria-atomic": "false",
+                  "aria-label": "Notifications",
+                  "aria-live": "polite",
+                  "aria-relevant": "additions text",
+                  "data-theme": "light",
+                  "role": "region",
+                  "tabindex": "-1"
+                }
+              },
+              "bounds": { "x": 0, "y": 0, "width": 780, "height": 0 },
+              "isVisible": false,
+              "isInteractive": true,
+              "inViewport": false,
+              "isIgnored": false,
+              "nthChild": 1
+            }
+          ]
+        },
+        {
+          "id": "33",
+          "role": "generic",
+          "name": "",
+          "value": "",
+          "selector": {
+            "tag": "div",
+            "classes": [
+              "relative",
+              "flex",
+              "h-screen",
+              "w-full",
+              "flex-col",
+              "overflow-hidden",
+              "bg-canvas",
+              "desktop-app-container"
+            ],
+            "attrs": {
+              "class": "relative flex h-screen w-full flex-col overflow-hidden bg-canvas desktop-app-container"
+            }
+          },
+          "bounds": { "x": 0, "y": 0, "width": 780, "height": 441 },
+          "isVisible": true,
+          "isInteractive": false,
+          "inViewport": true,
+          "isIgnored": false,
+          "nthChild": 5,
+          "children": [
+            {
+              "id": "34",
+              "role": "main",
+              "name": "",
+              "value": "",
+              "selector": {
+                "tag": "main",
+                "classes": ["relative", "h-full", "w-full", "overflow-hidden"],
+                "attrs": { "class": "relative h-full w-full overflow-hidden" }
+              },
+              "bounds": { "x": 0, "y": 0, "width": 780, "height": 441 },
+              "isVisible": true,
+              "isInteractive": false,
+              "inViewport": true,
+              "isIgnored": false,
+              "nthChild": 1,
+              "children": [
+                {
+                  "id": "35",
+                  "role": "none",
+                  "name": "",
+                  "value": "",
+                  "selector": {
+                    "tag": "div",
+                    "classes": ["h-screen", "w-full", "overflow-hidden", "bg-surface-1"],
+                    "attrs": { "class": "h-screen w-full overflow-hidden bg-surface-1" }
+                  },
+                  "bounds": { "x": 0, "y": 0, "width": 780, "height": 441 },
+                  "isVisible": true,
+                  "isInteractive": false,
+                  "inViewport": true,
+                  "isIgnored": true,
+                  "nthChild": 1,
+                  "children": [
+                    {
+                      "id": "36",
+                      "role": "generic",
+                      "name": "",
+                      "value": "",
+                      "selector": {
+                        "tag": "div",
+                        "classes": [
+                          "relative",
+                          "z-10",
+                          "flex",
+                          "h-screen",
+                          "w-screen",
+                          "flex-col",
+                          "items-center",
+                          "overflow-hidden",
+                          "overflow-y-auto",
+                          "px-8",
+                          "pt-6",
+                          "pb-10"
+                        ],
+                        "attrs": {
+                          "class": "relative z-10 flex h-screen w-screen flex-col items-center overflow-hidden overflow-y-auto px-8 pt-6 pb-10"
+                        }
+                      },
+                      "bounds": { "x": 0, "y": 0, "width": 780, "height": 441 },
+                      "isVisible": true,
+                      "isInteractive": false,
+                      "inViewport": true,
+                      "isIgnored": false,
+                      "nthChild": 1,
+                      "children": [
+                        {
+                          "id": "37",
+                          "role": "generic",
+                          "name": "",
+                          "value": "",
+                          "selector": {
+                            "tag": "div",
+                            "classes": [
+                              "sticky",
+                              "top-0",
+                              "flex",
+                              "w-full",
+                              "flex-shrink-0",
+                              "items-center",
+                              "justify-between",
+                              "gap-6"
+                            ],
+                            "attrs": {
+                              "class": "sticky top-0 flex w-full flex-shrink-0 items-center justify-between gap-6"
+                            }
+                          },
+                          "bounds": { "x": 32, "y": 24, "width": 716, "height": 20 },
+                          "isVisible": true,
+                          "isInteractive": false,
+                          "inViewport": true,
+                          "isIgnored": false,
+                          "nthChild": 1,
+                          "children": [
+                            {
+                              "id": "38",
+                              "role": "link",
+                              "name": "",
+                              "value": "",
+                              "properties": { "focusable": "true", "url": "http://localhost:3000/" },
+                              "selector": { "tag": "a", "attrs": { "data-discover": "true", "href": "/" } },
+                              "bounds": { "x": 32, "y": 24, "width": 95, "height": 20 },
+                              "isVisible": true,
+                              "isInteractive": true,
+                              "inViewport": true,
+                              "isIgnored": false,
+                              "nthChild": 1,
+                              "children": [
+                                {
+                                  "id": "39",
+                                  "role": "image",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "svg",
+                                    "classes": ["text-primary"],
+                                    "attrs": { "class": "text-primary" }
+                                  },
+                                  "bounds": { "x": 32, "y": 24, "width": 95, "height": 20 },
+                                  "isVisible": true,
+                                  "isInteractive": true,
+                                  "inViewport": true,
+                                  "isIgnored": false,
+                                  "nthChild": 1,
+                                  "children": [
+                                    {
+                                      "id": "40",
+                                      "role": "none",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": { "tag": "g" },
+                                      "bounds": { "x": 32, "y": 24, "width": 95, "height": 20 },
+                                      "isVisible": true,
+                                      "isInteractive": true,
+                                      "inViewport": true,
+                                      "isIgnored": true,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "41",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 103, "y": 31, "width": 11, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 1
+                                        },
+                                        {
+                                          "id": "42",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 89, "y": 31, "width": 11, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 2
+                                        },
+                                        {
+                                          "id": "43",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 72, "y": 27, "width": 12, "height": 16 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 3
+                                        },
+                                        {
+                                          "id": "44",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 86, "y": 27, "width": 2, "height": 16 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 4
+                                        },
+                                        {
+                                          "id": "45",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 115, "y": 31, "width": 12, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 5
+                                        },
+                                        {
+                                          "id": "46",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 32, "y": 24, "width": 32, "height": 19 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 6
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "47",
+                                      "role": "none",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": { "tag": "defs" },
+                                      "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+                                      "isVisible": false,
+                                      "isInteractive": true,
+                                      "inViewport": false,
+                                      "isIgnored": true,
+                                      "nthChild": 2,
+                                      "children": [
+                                        {
+                                          "id": "48",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "clippath", "id": "clip0_27_76" },
+                                          "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+                                          "isVisible": false,
+                                          "isInteractive": true,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 1,
+                                          "children": [
+                                            {
+                                              "id": "49",
+                                              "role": "none",
+                                              "name": "",
+                                              "value": "",
+                                              "selector": { "tag": "rect" },
+                                              "bounds": { "x": 0, "y": 0, "width": 0, "height": 0 },
+                                              "isVisible": false,
+                                              "isInteractive": true,
+                                              "inViewport": false,
+                                              "isIgnored": true,
+                                              "nthChild": 1
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "50",
+                              "role": "none",
+                              "name": "",
+                              "value": "",
+                              "selector": {
+                                "tag": "div",
+                                "classes": [
+                                  "flex",
+                                  "flex-col",
+                                  "items-end",
+                                  "text-center",
+                                  "text-13",
+                                  "font-medium",
+                                  "text-tertiary",
+                                  "sm:flex-row",
+                                  "sm:items-center",
+                                  "sm:gap-2"
+                                ],
+                                "attrs": {
+                                  "class": "flex flex-col items-end text-center text-13 font-medium text-tertiary sm:flex-row sm:items-center sm:gap-2"
+                                }
+                              },
+                              "bounds": { "x": 578, "y": 24, "width": 170, "height": 20 },
+                              "isVisible": true,
+                              "isInteractive": false,
+                              "inViewport": true,
+                              "isIgnored": true,
+                              "nthChild": 2,
+                              "children": [
+                                {
+                                  "id": "51",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "span",
+                                    "classes": ["text-body-sm-regular", "text-tertiary"],
+                                    "attrs": { "class": "text-body-sm-regular text-tertiary" }
+                                  },
+                                  "bounds": { "x": 578, "y": 24, "width": 101, "height": 20 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": true,
+                                  "isIgnored": true,
+                                  "nthChild": 1
+                                },
+                                {
+                                  "id": "53",
+                                  "role": "link",
+                                  "name": "Sign up",
+                                  "value": "",
+                                  "properties": { "focusable": "true", "url": "http://localhost:3000/sign-up/" },
+                                  "selector": {
+                                    "tag": "a",
+                                    "classes": ["text-body-sm-semibold", "text-accent-primary", "hover:underline"],
+                                    "attrs": {
+                                      "class": "text-body-sm-semibold text-accent-primary hover:underline",
+                                      "data-discover": "true",
+                                      "data-ph-element": "navigate_to_sign_up",
+                                      "href": "/sign-up/"
+                                    }
+                                  },
+                                  "bounds": { "x": 687, "y": 24, "width": 61, "height": 20 },
+                                  "isVisible": true,
+                                  "isInteractive": true,
+                                  "inViewport": true,
+                                  "isIgnored": false,
+                                  "nthChild": 2
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "55",
+                          "role": "none",
+                          "name": "",
+                          "value": "",
+                          "selector": {
+                            "tag": "div",
+                            "classes": [
+                              "mt-10",
+                              "flex",
+                              "w-full",
+                              "flex-grow",
+                              "flex-col",
+                              "items-center",
+                              "justify-center",
+                              "py-6"
+                            ],
+                            "attrs": {
+                              "class": "mt-10 flex w-full flex-grow flex-col items-center justify-center py-6"
+                            }
+                          },
+                          "bounds": { "x": 32, "y": 84, "width": 716, "height": 301 },
+                          "isVisible": true,
+                          "isInteractive": false,
+                          "inViewport": true,
+                          "isIgnored": true,
+                          "nthChild": 2,
+                          "children": [
+                            {
+                              "id": "56",
+                              "role": "generic",
+                              "name": "",
+                              "value": "",
+                              "selector": {
+                                "tag": "div",
+                                "classes": ["relative", "flex", "w-full", "max-w-[22.5rem]", "flex-col", "gap-6"],
+                                "attrs": { "class": "relative flex w-full max-w-[22.5rem] flex-col gap-6" }
+                              },
+                              "bounds": { "x": 210, "y": 108, "width": 360, "height": 253 },
+                              "isVisible": true,
+                              "isInteractive": false,
+                              "inViewport": true,
+                              "isIgnored": false,
+                              "nthChild": 1,
+                              "children": [
+                                {
+                                  "id": "57",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "div",
+                                    "classes": ["flex", "flex-col", "gap-1"],
+                                    "attrs": { "class": "flex flex-col gap-1" }
+                                  },
+                                  "bounds": { "x": 210, "y": 108, "width": 360, "height": 52 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": true,
+                                  "isIgnored": true,
+                                  "nthChild": 1,
+                                  "children": [
+                                    {
+                                      "id": "58",
+                                      "role": "none",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "span",
+                                        "classes": ["text-h4-semibold", "text-primary"],
+                                        "attrs": { "class": "text-h4-semibold text-primary" }
+                                      },
+                                      "bounds": { "x": 210, "y": 108, "width": 360, "height": 24 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": true,
+                                      "isIgnored": true,
+                                      "nthChild": 1
+                                    },
+                                    {
+                                      "id": "60",
+                                      "role": "none",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "span",
+                                        "classes": ["text-h4-semibold", "text-placeholder"],
+                                        "attrs": { "class": "text-h4-semibold text-placeholder" }
+                                      },
+                                      "bounds": { "x": 210, "y": 136, "width": 360, "height": 24 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": true,
+                                      "isIgnored": true,
+                                      "nthChild": 2
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "62",
+                                  "role": "generic",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "form",
+                                    "classes": ["space-y-4"],
+                                    "attrs": { "class": "space-y-4" }
+                                  },
+                                  "bounds": { "x": 210, "y": 184, "width": 360, "height": 114 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": true,
+                                  "isIgnored": false,
+                                  "nthChild": 2,
+                                  "children": [
+                                    {
+                                      "id": "63",
+                                      "role": "none",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "div",
+                                        "classes": ["space-y-1"],
+                                        "attrs": { "class": "space-y-1" }
+                                      },
+                                      "bounds": { "x": 210, "y": 184, "width": 360, "height": 66 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": true,
+                                      "isIgnored": true,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "64",
+                                          "role": "LabelText",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": {
+                                            "tag": "label",
+                                            "classes": ["text-13", "font-medium", "text-tertiary"],
+                                            "attrs": { "class": "text-13 font-medium text-tertiary", "for": "email" }
+                                          },
+                                          "bounds": { "x": 210, "y": 189, "width": 36, "height": 15 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": true,
+                                          "isIgnored": false,
+                                          "nthChild": 1
+                                        },
+                                        {
+                                          "id": "66",
+                                          "role": "generic",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": {
+                                            "tag": "div",
+                                            "classes": [
+                                              "relative",
+                                              "flex",
+                                              "items-center",
+                                              "rounded-md",
+                                              "border",
+                                              "bg-surface-1",
+                                              "border-strong"
+                                            ],
+                                            "attrs": {
+                                              "class": "relative flex items-center rounded-md border bg-surface-1 border-strong"
+                                            }
+                                          },
+                                          "bounds": { "x": 210, "y": 208, "width": 360, "height": 42 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": true,
+                                          "isIgnored": false,
+                                          "nthChild": 2,
+                                          "children": [
+                                            {
+                                              "id": "67",
+                                              "role": "textbox",
+                                              "name": "Email",
+                                              "value": "",
+                                              "properties": {
+                                                "editable": "plaintext",
+                                                "focusable": "true",
+                                                "focused": "true",
+                                                "invalid": "false",
+                                                "labelledby": "",
+                                                "multiline": "false",
+                                                "readonly": "false",
+                                                "required": "false",
+                                                "settable": "true"
+                                              },
+                                              "selector": {
+                                                "tag": "input",
+                                                "id": "email",
+                                                "classes": [
+                                                  "placeholder-tertiary",
+                                                  "block",
+                                                  "border-subtle-1",
+                                                  "bg-layer-2",
+                                                  "text-13",
+                                                  "focus:outline-none",
+                                                  "rounded-md",
+                                                  "px-3",
+                                                  "py-2",
+                                                  "h-10",
+                                                  "w-full",
+                                                  "border-0",
+                                                  "disable-autofill-style",
+                                                  "placeholder:text-placeholder",
+                                                  "autofill:bg-danger-primary",
+                                                  "focus:bg-none",
+                                                  "active:bg-transparent"
+                                                ],
+                                                "attrs": {
+                                                  "class": "placeholder-tertiary block border-subtle-1 bg-layer-2 text-13 focus:outline-none rounded-md px-3 py-2 h-10 w-full border-0 disable-autofill-style placeholder:text-placeholder autofill:bg-danger-primary focus:bg-none active:bg-transparent",
+                                                  "name": "email",
+                                                  "placeholder": "name@company.com",
+                                                  "type": "email"
+                                                }
+                                              },
+                                              "bounds": { "x": 211, "y": 209, "width": 358, "height": 40 },
+                                              "isVisible": true,
+                                              "isInteractive": true,
+                                              "inViewport": true,
+                                              "isIgnored": false,
+                                              "nthChild": 1
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "68",
+                                      "role": "button",
+                                      "name": "Continue",
+                                      "value": "",
+                                      "properties": { "disabled": "true", "invalid": "false" },
+                                      "selector": {
+                                        "tag": "button",
+                                        "classes": [
+                                          "inline-flex",
+                                          "items-center",
+                                          "justify-center",
+                                          "gap-1",
+                                          "whitespace-nowrap",
+                                          "transition-colors",
+                                          "focus-visible:outline-none",
+                                          "disabled:pointer-events-none",
+                                          "bg-accent-primary",
+                                          "text-on-color",
+                                          "hover:bg-accent-primary-hover",
+                                          "active:bg-accent-primary-active",
+                                          "disabled:bg-layer-disabled",
+                                          "disabled:text-on-color-disabled",
+                                          "h-8",
+                                          "rounded-md",
+                                          "px-2",
+                                          "text-body-sm-medium",
+                                          "w-full"
+                                        ],
+                                        "attrs": {
+                                          "class": "inline-flex items-center justify-center gap-1 whitespace-nowrap transition-colors focus-visible:outline-none disabled:pointer-events-none bg-accent-primary text-on-color hover:bg-accent-primary-hover active:bg-accent-primary-active disabled:bg-layer-disabled disabled:text-on-color-disabled h-8 rounded-md px-2 text-body-sm-medium w-full",
+                                          "type": "submit"
+                                        }
+                                      },
+                                      "bounds": { "x": 210, "y": 266, "width": 360, "height": 32 },
+                                      "isVisible": true,
+                                      "isInteractive": true,
+                                      "inViewport": true,
+                                      "isIgnored": false,
+                                      "nthChild": 2
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "70",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "div",
+                                    "classes": ["flex", "items-center", "justify-center"],
+                                    "attrs": { "class": "flex items-center justify-center" }
+                                  },
+                                  "bounds": { "x": 210, "y": 322, "width": 360, "height": 39 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": true,
+                                  "isIgnored": true,
+                                  "nthChild": 3,
+                                  "children": [
+                                    {
+                                      "id": "71",
+                                      "role": "paragraph",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "p",
+                                        "classes": ["text-center", "text-13", "whitespace-pre-line", "text-tertiary"],
+                                        "attrs": { "class": "text-center text-13 whitespace-pre-line text-tertiary" }
+                                      },
+                                      "bounds": { "x": 249, "y": 322, "width": 282, "height": 39 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": true,
+                                      "isIgnored": false,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "75",
+                                          "role": "link",
+                                          "name": "Terms of Service",
+                                          "value": "",
+                                          "properties": {
+                                            "focusable": "true",
+                                            "url": "https://plane.so/legals/terms-and-conditions/"
+                                          },
+                                          "selector": {
+                                            "tag": "a",
+                                            "classes": ["text-secondary"],
+                                            "attrs": {
+                                              "class": "text-secondary",
+                                              "href": "https://plane.so/legals/terms-and-conditions/"
+                                            }
+                                          },
+                                          "bounds": { "x": 287, "y": 344, "width": 107, "height": 15 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": false,
+                                          "nthChild": 1,
+                                          "children": [
+                                            {
+                                              "id": "76",
+                                              "role": "none",
+                                              "name": "",
+                                              "value": "",
+                                              "selector": {
+                                                "tag": "span",
+                                                "classes": [
+                                                  "text-13",
+                                                  "font-medium",
+                                                  "underline",
+                                                  "hover:cursor-pointer"
+                                                ],
+                                                "attrs": {
+                                                  "class": "text-13 font-medium underline hover:cursor-pointer"
+                                                }
+                                              },
+                                              "bounds": { "x": 287, "y": 344, "width": 107, "height": 15 },
+                                              "isVisible": true,
+                                              "isInteractive": true,
+                                              "inViewport": true,
+                                              "isIgnored": true,
+                                              "nthChild": 1
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "78",
+                                          "role": "link",
+                                          "name": "Privacy Policy",
+                                          "value": "",
+                                          "properties": {
+                                            "focusable": "true",
+                                            "url": "https://plane.so/legals/privacy-policy/"
+                                          },
+                                          "selector": {
+                                            "tag": "a",
+                                            "classes": ["text-secondary"],
+                                            "attrs": {
+                                              "class": "text-secondary",
+                                              "href": "https://plane.so/legals/privacy-policy/"
+                                            }
+                                          },
+                                          "bounds": { "x": 426, "y": 344, "width": 89, "height": 15 },
+                                          "isVisible": true,
+                                          "isInteractive": true,
+                                          "inViewport": true,
+                                          "isIgnored": false,
+                                          "nthChild": 2,
+                                          "children": [
+                                            {
+                                              "id": "79",
+                                              "role": "none",
+                                              "name": "",
+                                              "value": "",
+                                              "selector": {
+                                                "tag": "span",
+                                                "classes": [
+                                                  "text-13",
+                                                  "font-medium",
+                                                  "underline",
+                                                  "hover:cursor-pointer"
+                                                ],
+                                                "attrs": {
+                                                  "class": "text-13 font-medium underline hover:cursor-pointer"
+                                                }
+                                              },
+                                              "bounds": { "x": 426, "y": 344, "width": 89, "height": 15 },
+                                              "isVisible": true,
+                                              "isInteractive": true,
+                                              "inViewport": true,
+                                              "isIgnored": true,
+                                              "nthChild": 1
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "81",
+                          "role": "none",
+                          "name": "",
+                          "value": "",
+                          "selector": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "items-center", "gap-6"],
+                            "attrs": { "class": "flex flex-col items-center gap-6" }
+                          },
+                          "bounds": { "x": 170, "y": 385, "width": 440, "height": 72 },
+                          "isVisible": true,
+                          "isInteractive": false,
+                          "inViewport": true,
+                          "isIgnored": true,
+                          "nthChild": 3,
+                          "children": [
+                            {
+                              "id": "82",
+                              "role": "none",
+                              "name": "",
+                              "value": "",
+                              "selector": {
+                                "tag": "span",
+                                "classes": ["text-13", "whitespace-nowrap", "text-tertiary"],
+                                "attrs": { "class": "text-13 whitespace-nowrap text-tertiary" }
+                              },
+                              "bounds": { "x": 262, "y": 385, "width": 256, "height": 20 },
+                              "isVisible": true,
+                              "isInteractive": false,
+                              "inViewport": true,
+                              "isIgnored": true,
+                              "nthChild": 1
+                            },
+                            {
+                              "id": "84",
+                              "role": "none",
+                              "name": "",
+                              "value": "",
+                              "selector": {
+                                "tag": "div",
+                                "classes": [
+                                  "flex",
+                                  "w-full",
+                                  "flex-wrap",
+                                  "items-center",
+                                  "justify-center",
+                                  "gap-x-10",
+                                  "gap-y-4"
+                                ],
+                                "attrs": {
+                                  "class": "flex w-full flex-wrap items-center justify-center gap-x-10 gap-y-4"
+                                }
+                              },
+                              "bounds": { "x": 170, "y": 429, "width": 440, "height": 28 },
+                              "isVisible": true,
+                              "isInteractive": false,
+                              "inViewport": false,
+                              "isIgnored": true,
+                              "nthChild": 2,
+                              "children": [
+                                {
+                                  "id": "85",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "div",
+                                    "classes": ["flex", "h-7", "flex-1", "items-center", "justify-center"],
+                                    "attrs": { "class": "flex h-7 flex-1 items-center justify-center" }
+                                  },
+                                  "bounds": { "x": 170, "y": 429, "width": 96, "height": 28 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": false,
+                                  "isIgnored": true,
+                                  "nthChild": 1,
+                                  "children": [
+                                    {
+                                      "id": "86",
+                                      "role": "image",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "svg",
+                                        "classes": ["h-7", "w-24", "text-[#387ED1]"],
+                                        "attrs": { "class": "h-7 w-24 text-[#387ED1]" }
+                                      },
+                                      "bounds": { "x": 170, "y": 429, "width": 96, "height": 28 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": false,
+                                      "isIgnored": false,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "87",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 172, "y": 440, "width": 11, "height": 11 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 1
+                                        },
+                                        {
+                                          "id": "88",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 189, "y": 440, "width": 77, "height": 11 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 2
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "89",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "div",
+                                    "classes": ["flex", "h-7", "flex-1", "items-center", "justify-center"],
+                                    "attrs": { "class": "flex h-7 flex-1 items-center justify-center" }
+                                  },
+                                  "bounds": { "x": 306, "y": 429, "width": 64, "height": 28 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": false,
+                                  "isIgnored": true,
+                                  "nthChild": 2,
+                                  "children": [
+                                    {
+                                      "id": "90",
+                                      "role": "image",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "svg",
+                                        "classes": ["h-7", "w-16", "dark:text-on-color"],
+                                        "attrs": { "class": "h-7 w-16 dark:text-on-color" }
+                                      },
+                                      "bounds": { "x": 306, "y": 429, "width": 64, "height": 28 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": false,
+                                      "isIgnored": false,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "91",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 307, "y": 440, "width": 62, "height": 11 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 1
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "92",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "div",
+                                    "classes": ["flex", "h-7", "flex-1", "items-center", "justify-center"],
+                                    "attrs": { "class": "flex h-7 flex-1 items-center justify-center" }
+                                  },
+                                  "bounds": { "x": 410, "y": 429, "width": 64, "height": 28 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": false,
+                                  "isIgnored": true,
+                                  "nthChild": 3,
+                                  "children": [
+                                    {
+                                      "id": "93",
+                                      "role": "image",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "svg",
+                                        "classes": ["h-7", "w-16", "dark:text-on-color"],
+                                        "attrs": { "class": "h-7 w-16 dark:text-on-color" }
+                                      },
+                                      "bounds": { "x": 410, "y": 429, "width": 64, "height": 28 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": false,
+                                      "isIgnored": false,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "94",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 421, "y": 439, "width": 8, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 1
+                                        },
+                                        {
+                                          "id": "95",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 412, "y": 439, "width": 8, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 2
+                                        },
+                                        {
+                                          "id": "96",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 453, "y": 439, "width": 2, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 3
+                                        },
+                                        {
+                                          "id": "97",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 443, "y": 443, "width": 8, "height": 8 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 4
+                                        },
+                                        {
+                                          "id": "98",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 456, "y": 439, "width": 8, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 5
+                                        },
+                                        {
+                                          "id": "99",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 432, "y": 439, "width": 10, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 6
+                                        },
+                                        {
+                                          "id": "100",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 464, "y": 443, "width": 9, "height": 12 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 7
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "101",
+                                  "role": "none",
+                                  "name": "",
+                                  "value": "",
+                                  "selector": {
+                                    "tag": "div",
+                                    "classes": ["flex", "h-7", "flex-1", "items-center", "justify-center"],
+                                    "attrs": { "class": "flex h-7 flex-1 items-center justify-center" }
+                                  },
+                                  "bounds": { "x": 514, "y": 429, "width": 96, "height": 28 },
+                                  "isVisible": true,
+                                  "isInteractive": false,
+                                  "inViewport": false,
+                                  "isIgnored": true,
+                                  "nthChild": 4,
+                                  "children": [
+                                    {
+                                      "id": "102",
+                                      "role": "image",
+                                      "name": "",
+                                      "value": "",
+                                      "selector": {
+                                        "tag": "svg",
+                                        "classes": ["h-7", "w-24", "dark:text-on-color"],
+                                        "attrs": { "class": "h-7 w-24 dark:text-on-color" }
+                                      },
+                                      "bounds": { "x": 514, "y": 429, "width": 96, "height": 28 },
+                                      "isVisible": true,
+                                      "isInteractive": false,
+                                      "inViewport": false,
+                                      "isIgnored": false,
+                                      "nthChild": 1,
+                                      "children": [
+                                        {
+                                          "id": "103",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 569, "y": 430, "width": 9, "height": 9 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": true,
+                                          "isIgnored": true,
+                                          "nthChild": 1
+                                        },
+                                        {
+                                          "id": "104",
+                                          "role": "none",
+                                          "name": "",
+                                          "value": "",
+                                          "selector": { "tag": "path" },
+                                          "bounds": { "x": 519, "y": 440, "width": 86, "height": 13 },
+                                          "isVisible": true,
+                                          "isInteractive": false,
+                                          "inViewport": false,
+                                          "isIgnored": true,
+                                          "nthChild": 2
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
