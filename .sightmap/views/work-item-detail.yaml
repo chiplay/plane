@@ -1,0 +1,23 @@
+version: 1
+
+views:
+  - name: WorkItemDetail
+    route: /*/browse/*
+    url: http://localhost:3000/falcon/browse/FALCON-3/
+    source: apps/web/app/(all)/[workspaceSlug]/(projects)/browse/[workItemKey]
+    memory:
+      - The page title (document.title) is "<KEY> <work item title>" — cheapest way to confirm which item is open
+      - The right-hand properties panel buttons (state, assignees, dates, labels) have no stable attributes; they are reachable only by accessible name (e.g. button "Add assignees")
+      - Changing state opens a headlessui listbox; options are buttons named Backlog/Todo/In Progress/Done/Cancelled
+    components:
+      - name: WorkItemTitleInput
+        selector: '#title-input'
+        source: apps/web/core/components/issues/title-input.tsx
+        properties:
+          - name: value
+            extract: text
+      - name: RichTextEditor
+        selector: '.ProseMirror'
+        memory:
+          - Two instances on this view — the first is the description editor, the last is the comment composer
+          - TipTap/ProseMirror contenteditable; type via keyboard events, not fill

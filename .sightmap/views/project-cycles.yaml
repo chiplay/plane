@@ -1,0 +1,16 @@
+version: 1
+
+views:
+  - name: ProjectCycles
+    route: /*/projects/*/cycles
+    url: http://localhost:3000/falcon/projects/4d4d7286-38e5-4043-a368-9732f8faf14c/cycles/
+    memory:
+      - Cycle rows link to /<ws>/projects/<projectId>/cycles/<cycleId>
+    components:
+      - name: CycleItemLink
+        selector: 'a[href*="/cycles/"]:not([href$="/cycles/"])'
+        memory:
+          - Matches every link into a specific cycle (the list row plus chart links); the row is the match whose text starts with the completion percentage
+        properties:
+          - name: label
+            extract: text

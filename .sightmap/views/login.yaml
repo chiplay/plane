@@ -1,0 +1,22 @@
+version: 1
+
+views:
+  - name: LoginPage
+    route: /
+    url: http://localhost:3000/
+    source: apps/web/app/routes/index.tsx
+    memory:
+      - Root URL shows the login form only when unauthenticated; with a session it redirects client-side to /<workspace-slug>/
+      - Login is two-step; submitting a valid email swaps the form to add a Password field and a "Go to workspace" submit button
+    components:
+      - name: EmailInput
+        selector: 'input[name="email"]'
+        stability: uncertain
+      - name: PasswordInput
+        selector: 'input[name="password"]'
+        stability: uncertain
+      - name: ContinueButton
+        selector: 'button[type="submit"]'
+        properties:
+          - name: label
+            extract: text

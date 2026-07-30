@@ -1,0 +1,41 @@
+version: 1
+
+memory:
+  - Plane web is a React Router v7 SPA — first paint has 0 interactive nodes; wait for hydration ('#main-sidebar' appearing) before reading the page
+  - In dev (Vite) the first visit to any route triggers on-demand compilation and can take 20s+; later visits are fast
+
+components:
+  - name: AppSidebar
+    selector: '#main-sidebar'
+    source: apps/web/core/components/workspace/sidebar
+    memory:
+      - Several sidebar buttons expose raw i18n keys as aria-labels (aria_labels.app_sidebar.*) — an app bug; do not key selectors off them
+    children:
+      - name: SidebarLink
+        selector: 'a[href]'
+        properties:
+          - name: label
+            extract: text
+          - name: href
+            extract: attr=href
+      - name: NewWorkItemButton
+        selector: '[data-ph-element="sidebar_create_work_item_button"]'
+        memory:
+          - Opens the create work item modal from anywhere in the workspace
+
+  - name: WorkspaceSwitcher
+    selector: 'button[aria-label="Open workspace switcher"]'
+    properties:
+      - name: workspace
+        extract: text
+
+  - name: NotificationsLink
+    selector: 'a[href$="/notifications/"]'
+
+  - name: CommandSearch
+    selector: 'input[placeholder*="Search"]'
+    memory:
+      - Opens the command palette; Cmd/Ctrl-K also works from anywhere
+
+  - name: GitHubStarLink
+    selector: 'a[href*="github.com/makeplane"]'
